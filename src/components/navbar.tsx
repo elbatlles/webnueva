@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -31,7 +31,7 @@ export default function Navbar() {
       </div>
       <div>
         <div
-          className={`flex-col w-full h-full fixed bg-bgMenu  text-white text-center   flex  ${
+          className={`z-40 flex-col w-full h-full fixed bg-bgMenu  text-white text-center   flex  ${
             menuClick === false ? `hidden` : ``
           }`}
         >
