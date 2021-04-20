@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import 'btn.css';
+/*
 @font-face {
   font-family: 'La Belle Aurore';
   font-weight: 400;
@@ -12,7 +13,7 @@
   font-weight: 500;
   src: url(../fonts/LaBelleAurore-Regular.ttf) format('ttf');
 }
-
+*/
 .menu li {
   @apply h-16;
   @apply bg-bgMenu;
@@ -102,4 +103,11 @@ a {
   @apply absolute;
   margin-top: 1.7rem;
   left: 1rem;
+}
+.scrollDown span {
+  writing-mode: vertical-rl;
+}
+.scrollDownLeft {
+  @apply left-3;
+  @apply right-auto;
 }

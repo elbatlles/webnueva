@@ -1,7 +1,11 @@
 // import Head from 'next/head';
 // import styles from '../styles/Home.module.css';
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
+  const arrowDown = <FontAwesomeIcon icon={faArrowDown} />;
   return (
     <div className="min-h-screen min-w-full flex items-center">
       <main>
@@ -41,6 +45,27 @@ export default function Home() {
         <p className="text-gray-500 text-sm phraseGrey">
           FrontEnd Developer ReactJS / PrestaShop Expert
         </p>
+        <div className="mt-12 ">
+          <div className="contactme">
+            <Link href="/">
+              <a className="transparent">
+                <p>
+                  <span className="bg" />
+                  <span className="base" />
+                  <span className="text">Contact me!</span>
+                </p>
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div className="bottom-8 absolute scrollDown text-white right-2 flex text-sm flex-col">
+          <span className="vertical animate-bounce 	">Scroll Down</span>
+          {arrowDown}
+        </div>
+        <div className="bottom-8  scrollDownLeft absolute scrollDown text-white right-2 flex text-sm flex-col">
+          <span className=" animate-bounce 	">Scroll Down</span>
+          {arrowDown}
+        </div>
       </main>
     </div>
   );

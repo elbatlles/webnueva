@@ -22,7 +22,7 @@ module.exports = {
             transform: 'rotate(-3deg)',
           },
           '22.2%': {
-            transform: 'skewX(-12.5deg) skewY(-12.5deg)',
+            transform: 'skewY(-12.5deg) skewY(-12.5deg)',
           },
           '50%': {
             transform: 'rotate(3deg)',
