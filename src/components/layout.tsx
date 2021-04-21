@@ -32,8 +32,9 @@ const Layout = ({ children, title = `This is the default title` }: Props) => (
     </Head>
     <div className="bg-bgMenu pt-0">
       <header className="  " />
+
       <Navbar />
-      <div className="container m-auto px-4">
+      <div className="sm:pl-12  container m-auto px-4">
         <span className="tags">
           {tags[0]} <br />
         </span>

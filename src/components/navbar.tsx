@@ -23,16 +23,16 @@ export default function Navbar() {
         tabIndex={0}
         onClick={handleClick}
         onKeyDown={handleClick}
-        className={`z-50 w-8 cursor-pointer  fixed  top-3 right-3 tham tham-e-squeeze text-white tham-w-8 ${
+        className={`menus z-50 w-8 cursor-pointer sm:hidden fixed  top-3 right-3 tham tham-e-squeeze text-white tham-w-8 ${
           menuClick === false ? `tham-active` : ``
         }`}
       >
         {menuClick === false ? bars : times}
       </div>
-      <div>
+      <div className="bg-bgMenu ">
         <div
-          className={`z-40 flex-col w-full h-full fixed bg-bgMenu  text-white text-center   flex  ${
-            menuClick === false ? `hidden` : ``
+          className={`z-40 sm:w-32 lg:flex flex-grow flex-col w-full h-full fixed bg-bgMenu  text-white text-center   flex  ${
+            menuClick === false ? `hidden` : `flex`
           }`}
         >
           <div className="pt-24 pb-8 flex-col  flex justify-center align-middle  h-1/3 w-full bg-black ">

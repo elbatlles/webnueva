@@ -40,5 +40,6 @@ module.exports = {
       animation: ['hover', 'focus'],
     },
   },
+
   plugins: [],
 };
