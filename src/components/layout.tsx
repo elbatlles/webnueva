@@ -6,17 +6,7 @@ type Props = {
   children?: ReactNode;
   title?: string;
 };
-const tags: string[] = [
-  `</html>`,
-  `<body>`,
-  `<h1>`,
-  `</h1>`,
-  `<p>`,
-  `</p>`,
-  `</body>`,
-  `</body>`,
-  `</html>`,
-];
+const tags: string[] = [`<html>`, `</body>`, `</body>`, `</html>`];
 const Layout = ({ children, title = `This is the default title` }: Props) => (
   <div>
     <Head>
@@ -30,15 +20,18 @@ const Layout = ({ children, title = `This is the default title` }: Props) => (
         url(&apos;https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap&apos;);
       </style>
     </Head>
-    <div className="bg-bgMenu pt-0">
+    <div className="bg-bgColor pt-0">
       <header className="  " />
 
       <Navbar />
-      <div className="sm:pl-12  container m-auto px-4">
-        <span className="tags">
+      <div className="pl-6 sm:p-10   lg:pl-52   ">
+        <span className="tags tagInitial">
           {tags[0]} <br />
         </span>
         {children}
+        <span className="tags bottomTags">
+          {tags[1]} <br />
+        </span>
         <footer>
           <hr />
           <span />

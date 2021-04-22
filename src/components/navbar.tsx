@@ -23,7 +23,7 @@ export default function Navbar() {
         tabIndex={0}
         onClick={handleClick}
         onKeyDown={handleClick}
-        className={`menus z-50 w-8 cursor-pointer sm:hidden fixed  top-3 right-3 tham tham-e-squeeze text-white tham-w-8 ${
+        className={`menus z-50 w-8 cursor-pointer lg:hidden fixed  top-3 right-3 tham tham-e-squeeze text-white tham-w-8 ${
           menuClick === false ? `tham-active` : ``
         }`}
       >
@@ -31,7 +31,7 @@ export default function Navbar() {
       </div>
       <div className="bg-bgMenu ">
         <div
-          className={`z-40 sm:w-32 lg:flex flex-grow flex-col w-full h-full fixed bg-bgMenu  text-white text-center   flex  ${
+          className={`z-40 lg:w-32 lg:flex flex-grow flex-col w-full h-full fixed bg-bgMenu  text-white text-center     ${
             menuClick === false ? `hidden` : `flex`
           }`}
         >
@@ -41,7 +41,7 @@ export default function Navbar() {
             <p>Web developer </p>
           </div>
 
-          <nav className="h-2/3  w-full  bgMenu menu">
+          <nav className="h-2/3  w-full  bg-bgMenu menu">
             <menu className="h-full w-full  m-0 p-0">
               <ul className="mt-14 ">
                 <li>

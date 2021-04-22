@@ -8,8 +8,9 @@ module.exports = {
       colors: {
         primary: colors.yellow[400],
         colorHover: colors.green[400],
-        bgMenu: '#181818',
+        bgColor: '#1d1d1d',
         colorMenu: '#909096',
+        bgMenu: '#181818',
         iconsbg: colors.yellow[500],
         tagsHtml: '#515152',
       },
@@ -19,19 +20,31 @@ module.exports = {
       },
       keyframes: {
         wiggle: {
-          '0%, 100%': {
-            transform: 'rotate(-3deg)',
+          '0%': {
+            transform: 'scale3d(1, 1, 1)',
           },
-          '22.2%': {
-            transform: 'skewY(-12.5deg) skewY(-12.5deg)',
+          '30%': {
+            transform: 'scale3d(1.25, 0.75, 1)',
+          },
+          '40%': {
+            transform: 'scale3d(0.75, 1.25, 1)',
           },
           '50%': {
-            transform: 'rotate(3deg)',
+            transform: 'scale3d(1.15, 0.85, 1)',
+          },
+          '65%': {
+            transform: 'scale3d(0.95, 1.05, 1)',
+          },
+          '75%': {
+            transform: 'scale3d(1.05, 0.95, 1)',
+          },
+          '100%': {
+            transform: 'scale3d(1, 1, 1)',
           },
         },
       },
       animation: {
-        wiggle: 'wiggle 1s ease-in-out ',
+        wiggle: 'wiggle 0.8s linear normal',
       },
     },
   },

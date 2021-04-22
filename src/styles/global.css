@@ -16,7 +16,7 @@
 */
 .menu li {
   @apply h-16;
-  @apply bg-bgMenu;
+
   @apply border-b-2;
   @apply border-gray-800;
   @apply flex;
@@ -45,8 +45,6 @@ a {
   @apply text-tagsHtml;
   @apply text-2xl;
   @apply absolute;
-  @apply top-5;
-  @apply bottom-auto;
 }
 .tags::after {
   content: '<body>';
@@ -55,15 +53,16 @@ a {
   @apply absolute;
   @apply text-2xl;
 }
-.homeTitle {
-  @apply font-lora;
-  @apply text-white;
-  @apply text-5xl;
-  @apply flex;
-  @apply flex-wrap;
-
-  @apply justify-start;
-  @apply mr-4;
+.tagInitial {
+  @apply top-5;
+  @apply bottom-auto;
+}
+.bottomTags {
+  @apply top-auto;
+  @apply bottom-8;
+}
+.bottomTags::after {
+  content: '</html>';
 }
 .titleTags::before {
   content: '<h1>';
@@ -82,6 +81,18 @@ a {
 
   margin-top: 0.8rem;
   margin-left: 20rem;
+}
+.homeTitle {
+  @apply font-lora;
+  @apply text-white;
+
+  @apply text-5xl;
+  @apply flex;
+  @apply flex-wrap;
+  @apply sm:text-7xl;
+  @apply justify-start;
+  @apply mr-4;
+  @apply lg:text-8xl;
 }
 
 .homeTitle .blast {
@@ -108,6 +119,6 @@ a {
   writing-mode: vertical-rl;
 }
 .scrollDownLeft {
-  @apply left-3;
+  @apply lg:left-36;
   @apply right-auto;
 }

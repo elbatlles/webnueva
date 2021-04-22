@@ -42,7 +42,7 @@ export default function Home() {
             <span className="  blast">r</span>
           </div>
         </div>
-        <p className="text-gray-500 text-sm phraseGrey">
+        <p className="text-gray-500 text-xl phraseGrey tracking-widest">
           FrontEnd Developer ReactJS / PrestaShop Expert
         </p>
         <div className="mt-12 ">
