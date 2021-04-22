@@ -30,8 +30,9 @@
 
 .social li {
   @apply cursor-pointer;
-  @apply w-8;
+  @apply w-4;
   @apply justify-center;
+  @apply mx-1;
 }
 .social ul {
   @apply items-center;

@@ -35,13 +35,13 @@ export default function Navbar() {
             menuClick === false ? `hidden` : `flex`
           }`}
         >
-          <div className="pt-24 pb-8 flex-col  flex justify-center align-middle  h-1/3 w-full bg-black ">
+          <div className="mb-12 flex-col  flex justify-center align-middle  h-40 w-full bg-black ">
             <p> A</p>
             <span>Angel </span>
             <p>Web developer </p>
           </div>
 
-          <nav className="h-2/3  w-full  bg-bgMenu menu">
+          <nav className="h-96  w-full  bg-bgMenu menu">
             <menu className="h-full w-full  m-0 p-0">
               <ul className="mt-14 ">
                 <li>
@@ -67,16 +67,22 @@ export default function Navbar() {
               </ul>
             </menu>
           </nav>
-          <div className="social flex justify-center h-12 bottom-0 bg-red-500  mt-12">
-            <ul className="flex">
-              <li>
-                <Link href="https://nextjs.org">{twitter}</Link>
+          <div className="social flex justify-center h-12 bottom-0   ">
+            <ul className="w-full flex justify-center">
+              <li className="">
+                <Link href="https://nextjs.org">
+                  <a> {twitter}</a>
+                </Link>
               </li>
               <li>
-                <Link href="https://nextjs.org">{twitter}</Link>
+                <Link href="https://nextjs.org">
+                  <a> {twitter}</a>
+                </Link>
               </li>
               <li>
-                <Link href="https://nextjs.org">{twitter}</Link>
+                <Link href="https://nextjs.org">
+                  <a> {twitter}</a>
+                </Link>
               </li>
             </ul>
           </div>

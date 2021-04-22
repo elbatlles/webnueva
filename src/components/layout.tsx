@@ -6,7 +6,7 @@ type Props = {
   children?: ReactNode;
   title?: string;
 };
-const tags: string[] = [`<html>`, `</body>`, `</body>`, `</html>`];
+const tags: string[] = [`<html>`, `</body>`];
 const Layout = ({ children, title = `This is the default title` }: Props) => (
   <div>
     <Head>
