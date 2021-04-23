@@ -15,12 +15,9 @@
 }
 */
 @layer base {
-  a {
-    @apply transition duration-500  hover:text-colorHover;
-  }
   p {
     @apply text-white;
-    @apply py-16;
+    @apply pt-8;
   }
   h2 {
     @apply my-3;
@@ -37,8 +34,13 @@
   @apply items-center;
   @apply first:border-t-2;
 }
+a {
+  @apply transition duration-500  hover:text-colorHover;
+}
+
 .menu a {
   @apply text-colorMenu;
+  @apply transition duration-500  hover:text-colorHover;
 }
 
 .social li {
@@ -78,17 +80,17 @@
   @apply text-tagsHtml;
   @apply absolute;
   @apply text-lg;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
-.contain p::before {
+.contain .text-zone p:first-of-type:before {
   content: '<p>';
   @apply font-belle;
   @apply text-tagsHtml;
   @apply absolute;
-  @apply text-2xl;
+  @apply text-lg;
   margin-top: -2rem;
 }
-.contain p::after {
+.contain .text-zone p:last-of-type:after {
   content: '</p>';
   @apply font-belle;
   @apply text-tagsHtml;
@@ -191,6 +193,7 @@
   @apply text-colorHover;
   @apply overflow-hidden;
   @apply w-max;
+  @apply py-3;
 
   @apply whitespace-nowrap;
 }
