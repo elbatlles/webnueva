@@ -14,6 +14,19 @@
   src: url(../fonts/LaBelleAurore-Regular.ttf) format('ttf');
 }
 */
+@layer base {
+  a {
+    @apply transition duration-500  hover:text-colorHover;
+  }
+  p {
+    @apply text-white;
+    @apply py-16;
+  }
+  h2 {
+    @apply my-3;
+  }
+}
+
 .menu li {
   @apply h-16;
 
@@ -37,8 +50,51 @@
 .social ul {
   @apply items-center;
 }
-a {
-  @apply transition duration-500  hover:text-colorHover;
+
+.contain .contactme p {
+  @apply text-white;
+  @apply py-0;
+}
+.contain .contactme p::after {
+  content: '';
+}
+.contain .contactme p::after {
+  content: '';
+}
+.contain .contactme p::before {
+  content: '';
+}
+.contain h2::before {
+  content: '<h2>';
+  @apply font-belle;
+  @apply text-tagsHtml;
+  @apply absolute;
+  @apply text-lg;
+  margin-top: -2rem;
+}
+.contain h2::after {
+  content: '</h2>';
+  @apply font-belle;
+  @apply text-tagsHtml;
+  @apply absolute;
+  @apply text-lg;
+  margin-top: 4rem;
+}
+.contain p::before {
+  content: '<p>';
+  @apply font-belle;
+  @apply text-tagsHtml;
+  @apply absolute;
+  @apply text-2xl;
+  margin-top: -2rem;
+}
+.contain p::after {
+  content: '</p>';
+  @apply font-belle;
+  @apply text-tagsHtml;
+  @apply absolute;
+  @apply text-2xl;
+  margin-top: 1rem;
 }
 .tags {
   @apply font-belle;
@@ -53,15 +109,17 @@ a {
   @apply text-tagsHtml;
   @apply absolute;
   @apply text-2xl;
+  @apply left-3;
 }
 .tagInitial {
   @apply top-5;
   @apply bottom-auto;
 }
+/*
 .bottomTags {
   @apply top-auto;
   @apply bottom-8;
-}
+}*/
 .bottomTags::after {
   content: '</html>';
 }
@@ -70,18 +128,18 @@ a {
   @apply font-belle;
   @apply text-tagsHtml;
   @apply absolute;
-  @apply text-2xl;
-  margin-top: -3rem;
+  @apply text-lg;
+  margin-top: -1rem;
 }
 .titleTags::after {
   content: '</h1>';
   @apply font-belle;
   @apply text-tagsHtml;
   @apply absolute;
-  @apply text-2xl;
-
+  @apply text-lg;
+  @apply text-lg;
+  @apply lg:ml-titleHome;
   margin-top: 0.8rem;
-  margin-left: 20rem;
 }
 .homeTitle {
   @apply font-lora;
@@ -97,7 +155,7 @@ a {
 }
 
 .homeTitle .blast {
-  @apply hover:animate-wiggle;
+  @apply hover:animate-jello;
   @apply transition duration-500  hover:text-colorHover;
 }
 .phraseGrey:first-of-type:before {
@@ -105,7 +163,7 @@ a {
   @apply font-belle;
   @apply text-tagsHtml;
   @apply absolute;
-
+  @apply text-lg;
   margin-top: -1.5rem;
 }
 .phraseGrey:first-of-type:after {
@@ -114,7 +172,7 @@ a {
   @apply text-tagsHtml;
   @apply absolute;
   margin-top: 1.7rem;
-  left: 1rem;
+  @apply text-lg;
 }
 .scrollDown span {
   writing-mode: vertical-rl;
@@ -122,4 +180,31 @@ a {
 .scrollDownLeft {
   @apply lg:left-36;
   @apply right-auto;
+}
+.subtitle {
+  @apply animate-typewriter;
+  @apply flex;
+
+  @apply font-lora;
+  @apply lg:text-5xl;
+  @apply text-5xl;
+  @apply text-colorHover;
+  @apply overflow-hidden;
+  @apply w-max;
+
+  @apply whitespace-nowrap;
+}
+.subtitle .blast {
+  @apply hover:animate-jello;
+  @apply transition duration-500  hover:text-colorHover;
+}
+
+.invisible,
+.visible {
+  transition: visibility 0.8s linear, opacity 0.8s linear;
+  will-change: opacity;
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
 }

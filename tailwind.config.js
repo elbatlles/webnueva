@@ -5,6 +5,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      margin: {
+        titleHome: '40rem',
+      },
       colors: {
         primary: colors.yellow[400],
         colorHover: colors.green[400],
@@ -17,9 +20,10 @@ module.exports = {
       fontFamily: {
         belle: ['"La Belle Aurore"', 'cursive'],
         lora: ['"Lora"'],
+        sans: ['Helvetica', 'Arial', 'sans-serif'],
       },
       keyframes: {
-        wiggle: {
+        jello: {
           '0%': {
             transform: 'scale3d(1, 1, 1)',
           },
@@ -42,9 +46,18 @@ module.exports = {
             transform: 'scale3d(1, 1, 1)',
           },
         },
+        typewriter: {
+          from: {
+            width: '0',
+          },
+          to: {
+            width: '8em',
+          },
+        },
       },
       animation: {
-        wiggle: 'wiggle 0.8s linear normal',
+        jello: 'jello 0.8s linear normal',
+        typewriter: 'typewriter 4s steps(44) 1s 1 normal both',
       },
     },
   },

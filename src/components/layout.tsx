@@ -24,7 +24,7 @@ const Layout = ({ children, title = `This is the default title` }: Props) => (
       <header className="  " />
 
       <Navbar />
-      <div className="pl-6 sm:p-10   lg:pl-52   ">
+      <div className="pl-6 sm:p-10   lg:pl-40   contain">
         <span className="tags tagInitial">
           {tags[0]} <br />
         </span>

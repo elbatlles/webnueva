@@ -8,7 +8,6 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 export default function Navbar() {
   const [menuClick, setmenuClick] = useState(false);
   const handleClick = () => {
-    console.log(`Sdas?`);
     setmenuClick(!menuClick);
   };
   // const { state} = useContext(AppContext); tham-active
