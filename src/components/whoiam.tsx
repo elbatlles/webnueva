@@ -7,7 +7,7 @@ export default function Whoiam() {
   const scrollView = useScrollView(isInViewport);
 
   return (
-    <div className="grid grid-flow-col grid-cols-2 gap-6">
+    <div className="grid  grid-cols-1 space-y-0 lg:grid-cols-2 gap-6">
       <div>
         <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
           <h2 className={scrollView ? `subtitle` : ``}>

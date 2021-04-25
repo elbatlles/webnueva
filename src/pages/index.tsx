@@ -4,45 +4,57 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import Whoiam from '@/components/whoiam';
+import useIsInViewport from 'use-is-in-viewport';
+import useScrollView from '@/hooks/useScrollView';
 
 export default function Home() {
   const arrowDown = <FontAwesomeIcon icon={faArrowDown} />;
+  const [isInViewport, targetRef] = useIsInViewport();
+  const scrollView = useScrollView(isInViewport);
   return (
-    <div className=" ml-10">
+    <div className="max-w-xl sm:max-w-max mx-auto px-4  lg:ml-10 ">
       <div className="min-h-screen min-w-full flex items-center home">
         <main>
-          <div className="titleTags mb-10">
-            <div className="homeTitle">
-              <span className="  blast">H</span>
-              <span className="  blast">i</span>
-              <span className="  blast">,</span>
-            </div>
+          <div
+            ref={targetRef}
+            className={
+              scrollView
+                ? `titleTags mb-10 visible `
+                : `titleTags mb-10 invisible`
+            }
+          >
+            <h1 className="homeTitle ">
+              <div className="text">
+                <div className="  blast">H</div>
+                <div className="  blast">i</div>
+                <div className="  blast">,</div>
+              </div>
+              <div className="text">
+                <div className="  blast">I</div>&apos;
+                <div className="blast  mr-5 ">m</div>
+                <div className="blast">A</div>
+                <div className="blast">n</div>
+                <div className="blast">g</div>
+                <div className="blast">e</div>
+                <div className="blast ">l</div>
+                <div className="blast mr-3">,</div>
+              </div>
 
-            <div className="homeTitle">
-              <span className="  blast">I</span>&apos;
-              <span className="blast  mr-5 ">m</span>
-              <span className="blast">A</span>
-              <span className="blast">n</span>
-              <span className="blast">g</span>
-              <span className="blast">e</span>
-              <span className="blast ">l</span>
-              <span className="blast mr-3">,</span>
-            </div>
-
-            <div className="homeTitle">
-              <span className="  blast">W</span>
-              <span className="  blast">e</span>
-              <span className="  blast mr-3">b</span>
-              <span className="  blast">D</span>
-              <span className="  blast">e</span>
-              <span className="  blast">v</span>
-              <span className="  blast">e</span>
-              <span className="  blast">l</span>
-              <span className="  blast">o</span>
-              <span className="  blast">p</span>
-              <span className="  blast">e</span>
-              <span className="  blast">r</span>
-            </div>
+              <div className="text">
+                <div className="  blast">W</div>
+                <div className="  blast">e</div>
+                <div className="  blast mr-3">b</div>
+                <div className="  blast">D</div>
+                <div className="  blast">e</div>
+                <div className="  blast">v</div>
+                <div className="  blast">e</div>
+                <div className="  blast">l</div>
+                <div className="  blast">o</div>
+                <div className="  blast">p</div>
+                <div className="  blast">e</div>
+                <div className="  blast">r</div>
+              </div>
+            </h1>
           </div>
           <p className="text-gray-500 text-xl mt-20 phraseGrey tracking-widest">
             FrontEnd Developer ReactJS / PrestaShop Expert

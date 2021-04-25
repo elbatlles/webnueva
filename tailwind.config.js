@@ -50,14 +50,34 @@ module.exports = {
           from: {
             width: '0',
           },
+          '1%': {
+            opacity: '1',
+          },
           to: {
-            width: '8em',
+            width: '100%',
+          },
+          '100%': {
+            opacity: '1',
+            overflow: 'visible',
+          },
+        },
+        typewriter2: {
+          '0%': {
+            width: '0',
+          },
+          '1%': {
+            opacity: '1',
+          },
+
+          '100%': {
+            opacity: '1',
           },
         },
       },
       animation: {
         jello: 'jello 0.8s linear normal',
         typewriter: 'typewriter 4s steps(44) 1s 1 normal both',
+        typewriter2: 'typewriter2 4s steps(10, end)',
       },
     },
   },

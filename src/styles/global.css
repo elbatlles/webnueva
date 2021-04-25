@@ -105,25 +105,25 @@ a {
   @apply text-2xl;
   @apply absolute;
 }
-.tags::after {
+.tagInitial::after {
   content: '<body>';
   @apply font-belle;
-  @apply text-tagsHtml;
-  @apply absolute;
-  @apply text-2xl;
+
   @apply left-3;
 }
 .tagInitial {
   @apply top-5;
   @apply bottom-auto;
 }
-/*
+
 .bottomTags {
   @apply top-auto;
-  @apply bottom-8;
-}*/
-.bottomTags::after {
-  content: '</html>';
+
+  @apply relative;
+}
+.bottomTags::before {
+  content: '</body>';
+  @apply ml-8;
 }
 .titleTags::before {
   content: '<h1>';
@@ -143,23 +143,7 @@ a {
   @apply lg:ml-titleHome;
   margin-top: 0.8rem;
 }
-.homeTitle {
-  @apply font-lora;
-  @apply text-white;
 
-  @apply text-5xl;
-  @apply flex;
-  @apply flex-wrap;
-  @apply sm:text-7xl;
-  @apply justify-start;
-  @apply mr-4;
-  @apply lg:text-8xl;
-}
-
-.homeTitle .blast {
-  @apply hover:animate-jello;
-  @apply transition duration-500  hover:text-colorHover;
-}
 .phraseGrey:first-of-type:before {
   content: '<p>';
   @apply font-belle;
@@ -183,10 +167,59 @@ a {
   @apply lg:left-36;
   @apply right-auto;
 }
+.homeTitle {
+  @apply font-lora;
+  @apply text-white;
+
+  @apply text-5xl;
+  @apply overflow-hidden;
+  @apply w-max;
+
+  @apply sm:text-7xl;
+  @apply justify-start;
+  @apply mr-4;
+  @apply lg:text-8xl;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.homeTitle .text:nth-child(1) {
+  @apply animate-typewriter;
+  @apply w-max;
+  @apply overflow-hidden;
+  @apply flex;
+}
+
+.homeTitle .text:nth-child(2) {
+  @apply animate-typewriter;
+  @apply w-max;
+  @apply overflow-hidden;
+  @apply flex;
+  @apply opacity-0;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-duration: 2s;
+}
+
+.homeTitle .text:nth-child(3) {
+  @apply animate-typewriter;
+  @apply w-max;
+  @apply overflow-hidden;
+  @apply flex;
+  @apply opacity-0;
+  animation-fill-mode: forwards;
+
+  animation-delay: 4s;
+  animation-duration: 2s;
+}
+.homeTitle .blast {
+  @apply hover:animate-jello;
+  @apply transition duration-500  hover:text-colorHover;
+  @apply inline;
+}
 .subtitle {
   @apply animate-typewriter;
   @apply flex;
-
+  @apply opacity-0;
   @apply font-lora;
   @apply lg:text-5xl;
   @apply text-5xl;
@@ -194,8 +227,6 @@ a {
   @apply overflow-hidden;
   @apply w-max;
   @apply py-3;
-
-  @apply whitespace-nowrap;
 }
 .subtitle .blast {
   @apply hover:animate-jello;
