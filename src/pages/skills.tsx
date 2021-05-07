@@ -11,7 +11,7 @@ export default function Skills() {
   const time = Math.floor(timeDiff / (1000 * 3600 * 24) / 365);
   return (
     <div className="min-h-screen min-w-full  items-center flex home">
-      <main className="flex min-w-full">
+      <main className="flex min-w-full items-center">
         <div className="content pr-8">
           <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
             <h2 className={scrollView ? `subtitle` : ``}>
