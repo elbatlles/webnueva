@@ -12,7 +12,7 @@ export default function About() {
   return (
     <div className="min-h-screen min-w-full  items-center flex home">
       <main className="flex min-w-full">
-        <div className="content pr-8">
+        <div className="pt-32 content pr-8">
           <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
             <h2 className={scrollView ? `subtitle` : ``}>
               <div className="blast">M</div>
@@ -38,7 +38,7 @@ export default function About() {
             y otras tecnologías como React.
           </p>
         </div>
-        <div className="content-timeline">
+        <div className="pt-32 content-timeline">
           <Timeline />
         </div>
       </main>

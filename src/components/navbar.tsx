@@ -53,7 +53,7 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about">
+                  <Link href="/skills">
                     <a>My Skills</a>
                   </Link>
                 </li>

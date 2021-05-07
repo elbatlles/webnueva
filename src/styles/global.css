@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import 'btn.css';
+@import 'progressbar.css';
 /*
 @font-face {
   font-family: 'La Belle Aurore';
@@ -276,12 +277,13 @@ a {
 /*ABOUT*/
 .content {
   width: 40%;
-
-  padding-top: 160px;
 }
 .content-timeline {
   width: 60%;
-  padding-top: 160px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .list-disc ul {
   list-style: revert;
