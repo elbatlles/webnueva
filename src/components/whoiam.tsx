@@ -1,6 +1,7 @@
 import useScrollView from '@/hooks/useScrollView';
 import React from 'react';
 import useIsInViewport from 'use-is-in-viewport';
+import Image from 'next/image';
 
 export default function Whoiam() {
   const [isInViewport, targetRef] = useIsInViewport();
@@ -65,14 +66,55 @@ export default function Whoiam() {
 
       <div>
         <div id="clouds">
-          <div className="cloud x1" />
+          <div className="cloud x1">
+            <Image
+              src="/javascript.gif"
+              alt="Frontend Developer"
+              width={68}
+              height={68}
+            />
+          </div>
 
           <div className="cloud x2">
-            <p> crossfit </p>
+            <Image
+              src="/github.gif"
+              alt="Frontend Developer"
+              width={68}
+              height={68}
+            />
           </div>
-          <div className="cloud x3" />
-          <div className="cloud x4" />
-          <div className="cloud x5" />
+          <div className="cloud x3">
+            <Image
+              src="/vscode.gif"
+              alt="Frontend Developer"
+              width={68}
+              height={68}
+            />
+          </div>
+          <div className="cloud x4">
+            <Image
+              src="/crossfit.gif"
+              alt="Frontend Developer"
+              width={68}
+              height={68}
+            />
+          </div>
+          <div className="cloud x5">
+            <Image
+              src="/react.gif"
+              alt="Frontend Developer"
+              width={68}
+              height={68}
+            />
+          </div>
+          <div className="cloud x6">
+            <Image
+              src="/php.gif"
+              alt="Frontend Developer"
+              width={68}
+              height={68}
+            />
+          </div>
         </div>
       </div>
     </div>

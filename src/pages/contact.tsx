@@ -1,9 +1,8 @@
 import React from 'react';
 import useScrollView from '@/hooks/useScrollView';
 import useIsInViewport from 'use-is-in-viewport';
-import Link from 'next/link';
+
 import Image from 'next/image';
-import Progressbar from '../components/progressbar';
 
 export default function Skills() {
   const [isInViewport, targetRef] = useIsInViewport();
