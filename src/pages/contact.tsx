@@ -82,6 +82,7 @@ export default function Skills() {
             alt="Frontend Developer"
             width={640}
             height={480}
+            className="rounded"
           />
         </div>
       </main>

@@ -6,6 +6,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import Whoiam from '@/components/whoiam';
 import useIsInViewport from 'use-is-in-viewport';
 import useScrollView from '@/hooks/useScrollView';
+import Image from 'next/image';
 
 export default function Home() {
   const arrowDown = <FontAwesomeIcon icon={faArrowDown} />;
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <div className="max-w-xl sm:max-w-max mx-auto ">
       <div className="relative  min-h-screen min-w-full flex items-center home">
-        <main className="px-32">
+        <div className="px-32 w-max">
           <div
             ref={targetRef}
             className={
@@ -24,12 +25,12 @@ export default function Home() {
             }
           >
             <h1 className="homeTitle ">
-              <div className="text">
+              <div className="text ">
                 <div className="  blast">H</div>
                 <div className="  blast">i</div>
                 <div className="  blast">,</div>
               </div>
-              <div className="text">
+              <div className="text ">
                 <div className="  blast">I</div>&apos;
                 <div className="blast  mr-5 ">m</div>
                 <div className="blast">A</div>
@@ -40,7 +41,7 @@ export default function Home() {
                 <div className="blast mr-3">,</div>
               </div>
 
-              <div className="text">
+              <div className="text ">
                 <div className="  blast">W</div>
                 <div className="  blast">e</div>
                 <div className="  blast mr-3">b</div>
@@ -76,12 +77,22 @@ export default function Home() {
             <span className="vertical animate-bounce 	">Scroll Down </span>
             {arrowDown}
           </div>
-        </main>
+        </div>
+        <div className="px-32">
+          <img
+            src="/perfil.jpg"
+            alt="Angel Batlles"
+            width={650}
+            height={488}
+            className=" rounded  animate-fadeindown"
+          />
+        </div>
         <div className="bottom-8  scrollDownLeft absolute scrollDown text-white right-2 flex text-sm flex-col">
           <span className=" animate-bounce 	">Scroll Down</span>
           {arrowDown}
         </div>
       </div>
+
       <Whoiam />
     </div>
   );

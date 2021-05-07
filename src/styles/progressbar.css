@@ -35,8 +35,17 @@
   height: 100%;
   background-color: #5225bd;
   border-radius: 10px;
-  animation: g 2500ms infinite ease-in-out;
+  animation: g 2500ms infinite ease-in-out, animate-width 2500ms ease-in-out;
   z-index: 2;
+}
+
+@keyframes animate-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 @keyframes g {

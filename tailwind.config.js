@@ -49,16 +49,12 @@ module.exports = {
         typewriter: {
           from: {
             width: '0',
-          },
-          '1%': {
             opacity: '1',
           },
+
           to: {
             width: '100%',
-          },
-          '100%': {
             opacity: '1',
-            overflow: 'visible',
           },
         },
         typewriter2: {
@@ -73,11 +69,23 @@ module.exports = {
             opacity: '1',
           },
         },
+        fadeindown: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
       },
       animation: {
         jello: 'jello 0.8s linear normal',
-        typewriter: 'typewriter 4s steps(44) 1s 1 normal both',
-        typewriter2: 'typewriter2 4s steps(10, end)',
+        typewriter: 'typewriter 5s steps(40, end)   normal both',
+        typewriter2: 'typewriter 5s steps(40, end)',
+        fadeindown: 'fadeindown 3s ease-out',
+        pingone: ' ping 3s cubic-bezier(0, 0, 0.2, 1) normal both',
       },
     },
   },
