@@ -12,9 +12,9 @@ export default function Home() {
   const [isInViewport, targetRef] = useIsInViewport();
   const scrollView = useScrollView(isInViewport);
   return (
-    <div className="max-w-xl sm:max-w-max mx-auto px-4  lg:ml-10 ">
-      <div className="min-h-screen min-w-full flex items-center home">
-        <main>
+    <div className="max-w-xl sm:max-w-max mx-auto ">
+      <div className="relative  min-h-screen min-w-full flex items-center home">
+        <main className="px-32">
           <div
             ref={targetRef}
             className={
@@ -73,14 +73,14 @@ export default function Home() {
             </div>
           </div>
           <div className="bottom-8 absolute scrollDown text-white right-2 flex text-sm flex-col">
-            <span className="vertical animate-bounce 	">Scroll Down</span>
-            {arrowDown}
-          </div>
-          <div className="bottom-8  scrollDownLeft absolute scrollDown text-white right-2 flex text-sm flex-col">
-            <span className=" animate-bounce 	">Scroll Down</span>
+            <span className="vertical animate-bounce 	">Scroll Down </span>
             {arrowDown}
           </div>
         </main>
+        <div className="bottom-8  scrollDownLeft absolute scrollDown text-white right-2 flex text-sm flex-col">
+          <span className=" animate-bounce 	">Scroll Down</span>
+          {arrowDown}
+        </div>
       </div>
       <Whoiam />
     </div>

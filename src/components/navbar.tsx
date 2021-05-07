@@ -34,17 +34,21 @@ export default function Navbar() {
             menuClick === false ? `hidden` : `flex`
           }`}
         >
-          <div className="mb-12 flex-col  flex justify-center align-middle  h-40 w-full bg-black ">
-            <p> A</p>
-            <span>Angel </span>
-            <p>Web developer </p>
-          </div>
+          <Link href="/">
+            <a>
+              <div className="mb-12 flex-col  flex justify-center align-middle  h-40 w-full bg-black ">
+                <p> A</p>
+                <span>Angel </span>
+                <p>Web developer </p>
+              </div>
+            </a>
+          </Link>
 
           <nav className="h-96  w-full  bg-bgMenu menu">
             <menu className="h-full w-full  m-0 p-0">
               <ul className="mt-14 ">
                 <li>
-                  <Link href="/">
+                  <Link href="/about">
                     <a>About</a>
                   </Link>
                 </li>

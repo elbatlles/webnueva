@@ -20,22 +20,20 @@ const Layout = ({ children, title = `This is the default title` }: Props) => (
         url(&apos;https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap&apos;);
       </style>
     </Head>
-    <div className="bg-bgColor pt-0">
+    <div className=" pt-0">
       <header className="  " />
 
       <Navbar />
-      <div className=" mx-auto sm:pl-6 sm:p-10   lg:pl-40 z-20  contain">
+      <div className="relative mx-auto sm:pl-6    lg:pl-40 z-20  contain">
         <span className="tags tagInitial">
           {tags[0]} <br />
         </span>
-        {children}
+        <div className="min-h-screen  px-4   ">
+          <div className="flex   home">{children}</div>
+        </div>
         <span className="tags bottomTags">
           <br /> {tags[1]}
         </span>
-        <footer>
-          <hr />
-          <span />
-        </footer>
       </div>
     </div>
   </div>
