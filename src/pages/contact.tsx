@@ -29,7 +29,7 @@ export default function Skills() {
             </h2>
           </div>
           <div className="contain ">
-            <div className="text-zone">
+            <div className="text-zone text-center lg:text-left">
               <p>
                 I’m interested in freelance opportunities – especially ambitious
                 or large projects. However, if you have other request or
@@ -63,7 +63,7 @@ export default function Skills() {
                 <textarea className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" />
               </div>
               <div className="mt-8">
-                <div className="contactme">
+                <div className="contactme justify-center">
                   <a className="transparent">
                     <p>
                       <span className="bg" />

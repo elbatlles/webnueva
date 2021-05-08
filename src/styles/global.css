@@ -283,6 +283,7 @@ a {
   @apply lg:w-content40;
 }
 .content-timeline {
+  @apply w-full;
   @apply lg:w-content60;
   @apply pb-20;
 
@@ -323,4 +324,11 @@ a {
 .title {
   @apply py-3;
   @apply my-3;
+}
+
+/*Progress bar*/
+.container-pro {
+  @apply lg:min-w-progressbar;
+  @apply w-full;
+  @apply lg:w-auto;
 }

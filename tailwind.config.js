@@ -13,6 +13,10 @@ module.exports = {
         content40: '40%',
         content60: '60%',
       },
+      minWidth: {
+        progressbar: '500px',
+      },
+
       colors: {
         primary: colors.yellow[400],
         colorHover: colors.green[400],
