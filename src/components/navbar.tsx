@@ -35,7 +35,12 @@ export default function Navbar() {
           }`}
         >
           <Link href="/">
-            <a>
+            <a
+              role="button"
+              tabIndex={0}
+              onClick={handleClick}
+              onKeyDown={handleClick}
+            >
               <div className="mb-12 flex-col  flex justify-center align-middle  h-40 w-full bg-black ">
                 <p> A</p>
                 <span>Angel </span>
