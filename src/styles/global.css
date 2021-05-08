@@ -206,7 +206,7 @@ a {
 
   @apply text-5xl;
   @apply overflow-hidden;
-  @apply w-max;
+  @apply sm:lg:w-titleHome;
 
   @apply sm:text-7xl;
   @apply justify-start;
@@ -271,7 +271,6 @@ a {
 
 .invisible,
 .visible {
-  width: 643px;
   transition: visibility 0.8s linear, opacity 0.8s linear;
   will-change: opacity;
   opacity: 0;
@@ -281,10 +280,11 @@ a {
 }
 /*ABOUT*/
 .content {
-  width: 40%;
+  @apply lg:w-content40;
 }
 .content-timeline {
-  width: 60%;
+  @apply lg:w-content60;
+  @apply pb-20;
 
   display: flex;
   flex-direction: column;
@@ -317,6 +317,8 @@ a {
   @apply text-lg;
   @apply lg:ml-6;
   margin-top: 2.8rem;
+  @apply right-1;
+  @apply lg:right-auto;
 }
 .title {
   @apply py-3;

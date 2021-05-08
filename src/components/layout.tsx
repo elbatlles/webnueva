@@ -29,7 +29,7 @@ const Layout = ({ children, title = `This is the default title` }: Props) => (
           {tags[0]} <br />
         </span>
         <div className="min-h-screen  px-4   ">
-          <div className="flex   home">{children}</div>
+          <div className="flex lg:pb-0 home">{children}</div>
         </div>
         <span className="tags bottomTags">
           <br /> {tags[1]}

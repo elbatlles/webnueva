@@ -12,7 +12,7 @@ export default function Skills() {
   const time = Math.floor(timeDiff / (1000 * 3600 * 24) / 365);
   return (
     <div className="min-h-screen min-w-full  items-center flex home">
-      <main className="flex min-w-full items-center">
+      <main className="mt-32 sm:mt-0 flex flex-col lg:flex-row min-w-full items-center">
         <div className="content pr-8">
           <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
             <h2 className={scrollView ? `subtitle` : ``}>
@@ -76,7 +76,7 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <div className="content-timeline">
+        <div className="content-timeline py-6 lg:py-0">
           <Image
             src="/developer.gif"
             alt="Frontend Developer"

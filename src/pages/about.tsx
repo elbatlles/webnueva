@@ -10,8 +10,8 @@ export default function About() {
   const timeDiff = Math.abs(Date.now() - born.getTime());
   const time = Math.floor(timeDiff / (1000 * 3600 * 24) / 365);
   return (
-    <div className="min-h-screen min-w-full  items-center flex home">
-      <main className="flex min-w-full">
+    <div className="  min-h-screen min-w-full  items-center flex home">
+      <main className="flex-col lg:flex-row  flex min-w-full">
         <div className="pt-32 content pr-8">
           <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
             <h2 className={scrollView ? `subtitle` : ``}>

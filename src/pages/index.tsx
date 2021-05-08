@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="max-w-xl sm:max-w-max mx-auto ">
       <div className="relative  min-h-screen min-w-full flex items-center home">
-        <div className="px-32 w-max">
+        <div className="lg:px-32 sm:w-max">
           <div
             ref={targetRef}
             className={
@@ -24,7 +24,7 @@ export default function Home() {
                 : `titleTags mb-10 invisible`
             }
           >
-            <h1 className="homeTitle ">
+            <h1 className="homeTitle  w-auto">
               <div className="text ">
                 <div className="  blast">H</div>
                 <div className="  blast">i</div>
@@ -78,8 +78,8 @@ export default function Home() {
             {arrowDown}
           </div>
         </div>
-        <div className="px-32">
-          <img
+        <div className="px-32 hidden lg:block">
+          <Image
             src="/perfil.jpg"
             alt="Angel Batlles"
             width={650}

@@ -8,6 +8,11 @@ module.exports = {
       margin: {
         titleHome: '40rem',
       },
+      width: {
+        titleHome: '625px',
+        content40: '40%',
+        content60: '60%',
+      },
       colors: {
         primary: colors.yellow[400],
         colorHover: colors.green[400],

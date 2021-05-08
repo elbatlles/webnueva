@@ -48,7 +48,7 @@ export default function Navbar() {
             <menu className="h-full w-full  m-0 p-0">
               <ul className="mt-14 ">
                 <li>
-                  <Link href="/about">
+                  <Link passHref href="/about">
                     <a>About</a>
                   </Link>
                 </li>
