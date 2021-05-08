@@ -8,7 +8,7 @@ export default function Skills() {
   const scrollView = useScrollView(isInViewport);
   const born: Date = new Date(`1989-11-29`);
   const timeDiff = Math.abs(Date.now() - born.getTime());
-  const time = Math.floor(timeDiff / (1000 * 3600 * 24) / 365);
+
   return (
     <div className="min-h-screen min-w-full  items-center flex home">
       <main className="flex flex-col lg:flex-row min-w-full items-center">

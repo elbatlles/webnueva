@@ -49,22 +49,50 @@ export default function Navbar() {
               <ul className="mt-14 ">
                 <li>
                   <Link passHref href="/about">
-                    <a>About</a>
+                    <a
+                      tabIndex={0}
+                      role="button"
+                      onClick={handleClick}
+                      onKeyDown={handleClick}
+                    >
+                      About
+                    </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/skills">
-                    <a>My Skills</a>
+                  <Link passHref href="/skills">
+                    <a
+                      tabIndex={0}
+                      role="button"
+                      onClick={handleClick}
+                      onKeyDown={handleClick}
+                    >
+                      My Skills
+                    </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about">
-                    <a>Blog</a>
+                  <Link passHref href="/about">
+                    <a
+                      tabIndex={0}
+                      role="button"
+                      onClick={handleClick}
+                      onKeyDown={handleClick}
+                    >
+                      Blog
+                    </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact">
-                    <a>Contact</a>
+                  <Link passHref href="/contact">
+                    <a
+                      tabIndex={0}
+                      role="button"
+                      onClick={handleClick}
+                      onKeyDown={handleClick}
+                    >
+                      Contact
+                    </a>
                   </Link>
                 </li>
               </ul>
