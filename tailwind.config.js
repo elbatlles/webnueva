@@ -9,7 +9,7 @@ module.exports = {
         titleHome: '40rem',
       },
       width: {
-        titleHome: '625px',
+        titleHome: '640px',
         content40: '40%',
         content60: '60%',
       },
@@ -91,8 +91,8 @@ module.exports = {
       },
       animation: {
         jello: 'jello 0.8s linear normal',
-        typewriter: 'typewriter 5s steps(40, end)   normal both',
-        typewriter2: 'typewriter 5s steps(40, end)',
+        typewriter: 'typewriter 0.5s steps(40, end)   normal both',
+        typewriter2: 'typewriter 0.5s steps(40, end)',
         fadeindown: 'fadeindown 3s ease-out',
         pingone: ' ping 3s cubic-bezier(0, 0, 0.2, 1) normal both',
       },

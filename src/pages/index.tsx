@@ -62,12 +62,12 @@ export default function Home() {
           </p>
           <div className="mt-12 ">
             <div className="contactme">
-              <Link href="/">
+              <Link href="/contact">
                 <a className="transparent">
                   <p>
                     <span className="bg" />
                     <span className="base" />
-                    <span className="text">Contact me!</span>
+                    <span className="text">¡contactame!</span>
                   </p>
                 </a>
               </Link>

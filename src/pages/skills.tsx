@@ -1,17 +1,16 @@
 import React from 'react';
 import useScrollView from '@/hooks/useScrollView';
 import useIsInViewport from 'use-is-in-viewport';
+import Link from 'next/link';
 import Progressbar from '../components/progressbar';
 
 export default function Skills() {
   const [isInViewport, targetRef] = useIsInViewport();
   const scrollView = useScrollView(isInViewport);
-  const born: Date = new Date(`1989-11-29`);
-  const timeDiff = Math.abs(Date.now() - born.getTime());
 
   return (
     <div className="min-h-screen min-w-full  items-center flex home">
-      <main className="flex flex-col lg:flex-row min-w-full items-center">
+      <main className="flex flex-col lg:flex-row min-w-full ">
         <div className="pt-32 sm:pt-0   content pr-8">
           <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
             <h2 className={scrollView ? `subtitle` : ``}>
@@ -28,23 +27,28 @@ export default function Skills() {
               <div className="blast  ">e</div>
               <div className="blast  ">r</div>
               <div className="blast  ">i</div>
+              <div className="blast  ">e</div>
               <div className="blast  ">n</div>
               <div className="blast  ">c</div>
-              <div className="blast  ">e</div>
+              <div className="blast  ">i</div>
+              <div className="blast  ">a</div>
             </h2>
           </div>
           <p>
-            Since beginning my journey as a freelance developer nearly 10 years
-            ago, I’ve done remote work for agencies, consulted for startups, and
-            collaborated with talented people to create web products for both
-            business and consumer use. I create successful responsive websites
-            that are fast, easy to use, and built with best practices. The main
-            area of my expertise is front-end development, HTML, CSS, JS,
-            building small and medium web apps, custom plugins, features,
-            animations, and coding interactive layouts. I also have full-stack
-            developer experience with popular open-source CMS like (WordPress,
-            Drupal, Magento, Keystone.js and others) . Visit my LinkedIn profile
-            for more details or just contact me.
+            Desde que empecé mi andadura como desarrollador hace casi 10 años,
+            he realizado trabajos para muchas agencias e startups, he colaborado
+            con gente con mucho talento para crear productos web tanto para
+            empresas como para retail. Creo sitios web responsive y productos
+            {` `}
+            <Link href="https://es.wikipedia.org/wiki/Producto_viable_m%C3%ADnimo/">
+              <a target="_blank"> MVP </a>
+            </Link>
+            {` `}
+            en tiempos cortos para que el cliente puede validar su idea. El área
+            principal de mi experiencia es el desarrollo front-end, HTML, CSS,
+            JS, la construcción de aplicaciones web pequeñas y medianas. También
+            tengo experiencia como desarrollador full-stack con populares CMS de
+            código abierto como (WordPress, Prestashop).
           </p>
         </div>
         <div className="content-timeline">

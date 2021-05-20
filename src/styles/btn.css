@@ -96,6 +96,17 @@ div a:before {
   transition: 0.3s ease-out all;
   transform: skewX(-10deg);
 }
+.contactme a p span.bgnook {
+  left: -5%;
+  position: absolute;
+  @apply bg-red-600;
+
+  width: 0;
+  height: 100%;
+  z-index: 3;
+  transition: 0.3s ease-out all;
+  transform: skewX(-10deg);
+}
 .contactme a p span.text {
   z-index: 4;
   width: 100%;
@@ -119,6 +130,9 @@ div a:before {
   color: #ece8e1;
 }
 .contactme a:hover span.bg {
+  width: 110%;
+}
+.contactme a:hover span.bgnook {
   width: 110%;
 }
 .contactme a:hover span.text:after {

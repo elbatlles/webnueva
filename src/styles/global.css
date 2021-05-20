@@ -56,7 +56,7 @@ a {
   @apply transition duration-500  hover:text-colorHover;
 }
 
-.menu a {
+a {
   @apply text-colorMenu;
   @apply transition duration-500  hover:text-colorHover;
 }

@@ -24,7 +24,7 @@ export default function About() {
               <div className="blast">e</div>
               <div className="blast">l</div>
               <div className="blast  mr-5">f</div>
-              <div className="blast">&</div>
+              <div className="blast mr-5">&</div>
               <div className="blast  mr-5">I</div>
             </h2>
           </div>

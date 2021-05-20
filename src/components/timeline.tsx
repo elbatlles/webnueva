@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Timeline() {
   return (
@@ -13,7 +14,7 @@ function Timeline() {
         </li>
         <li>
           <b> 1997:</b> 🎮 Me regalan mi primera Gameboy y con ello cada vez me
-          aficiono mas a la tecnologia
+          aficiono mas a la tecnología
         </li>
         <li>
           <b> 2003:</b> ⌨️ Tengo mi primer ordenador: Un Pentium 4 con 256MB de
@@ -35,7 +36,12 @@ function Timeline() {
           <b> 2011:</b> <br />
           <ul>
             <li>Trabajo en Zimbra en Italia como Erasmus</li>
-            <li>Empiezo a Trabajar en Punt Informatic</li>
+            <li>
+              Empiezo a Trabajar en
+              <Link href="https://puntinformatic.com/">
+                <a target="_blank"> Punt Informatic </a>
+              </Link>
+            </li>
           </ul>
         </li>
         <li>
@@ -43,11 +49,25 @@ function Timeline() {
           Java
         </li>
         <li>
-          <b> 2013:</b> 🏫 Dejo PuntInformatic y Empiezo en Grafix
+          <b> 2013:</b> 🏫 Dejo{` `}
+          <Link href="https://puntinformatic.com/">
+            <a target="_blank"> Punt Informatic </a>
+          </Link>
+          {` `}y Empiezo en{` `}
+          <Link href="https://grafix.es/">
+            <a target="_blank"> Grafix </a>
+          </Link>
         </li>
         <li>
           <b> 2014:</b>🏃 Empiezo a ser &#34;Runner&#34; y llegan a la Empresa
-          dos grandes compañeros Marti Duran y Marc Girbau
+          dos grandes compañeros
+          <Link href="https://www.linkedin.com/in/mart%C3%AD-duran-69257374/">
+            <a target="_blank"> Marti Duran </a>
+          </Link>
+          y
+          <Link href="https://www.linkedin.com/in/marcgirbau/">
+            <a target="_blank"> Marc Girbau</a>
+          </Link>
         </li>
         <li>
           <b> 2015:</b>🐶 LLega a casa la menta, una perrita
@@ -64,7 +84,7 @@ function Timeline() {
           <ul>
             <li>Hago una media maraton de montaña y una normal.</li>
             <li>
-              ✈️ Viajo a Albania 🇦🇱 donde me cambia la perpestiva de como va el
+              ✈️ Viajo a Albania 🇦🇱 donde me cambia la perspectiva de como va el
               mundo
             </li>
           </ul>
@@ -83,12 +103,21 @@ function Timeline() {
         <li>
           <b>2020:</b>
           <li>
-            Acabo un curso por la UOC impartido por Oriol rius sobre IOT, que me
-            abre un mundo nuevo y conzco a gente super interesante
+            Acabo un curso por la UOC impartido por{` `}
+            <Link href="https://oriolrius.me/">
+              <a target="_blank"> Oriol Rius</a>
+            </Link>
+            {` `}
+            sobre IOT, que me abre un mundo nuevo y conzco a gente super
+            interesante
           </li>
           <li>
             Empizo en la Startup Kumux Aprendo todo mis bases de Reactjs gracias
-            a Pelayo Mendez y todo que es &#34;vivir&#34; dentro de una startup
+            a
+            <Link href="https://es.linkedin.com/in/pelayomendez">
+              <a target="_blank"> Pelayo Mendez </a>
+            </Link>
+            y todo que es &#34;vivir&#34; dentro de una startup
           </li>
           <li>
             Coronavirus (COVID-19) nos tiene en cuarentena. 🏠 #QuedateEnCasa

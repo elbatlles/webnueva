@@ -2,6 +2,7 @@ import useScrollView from '@/hooks/useScrollView';
 import React from 'react';
 import useIsInViewport from 'use-is-in-viewport';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Whoiam() {
   const [isInViewport, targetRef] = useIsInViewport();
@@ -12,54 +13,60 @@ export default function Whoiam() {
       <div>
         <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
           <h2 className={scrollView ? `subtitle` : ``}>
-            <div className="blast">W</div>
-            <div className="blast">h</div>
-            <div className="blast">a</div>
-            <div className="blast mr-5">t</div>
-            <div className="blast">I</div>
-            <div className="blast">&apos;</div>
-            <div className="blast mr-5">m</div>
-            <div className="blast">i</div>
-            <div className="blast">n</div>
+            <div className="blast">¿</div>
+            <div className="blast">E</div>
+            <div className="blast mr-5">n</div>
+            <div className="blast ">q</div>
+            <div className="blast">u</div>
+            <div className="blast mr-5">e</div>
+            <div className="blast ">e</div>
+            <div className="blast">s</div>
             <div className="blast">t</div>
             <div className="blast">o</div>
+            <div className="blast">y</div>
             <div className="blast">?</div>
           </h2>
         </div>
         <div className="text-zone">
-          <p>Hi, how are you? I hope you&apos;re doing great !</p>
+          <p>Hola, ¿qué tal estás? ¡Espero que muy bien!</p>
           <p>
-            If you&apos;ve come this far, I guess you&apos;re looking for
-            something more about me than a simple list of my professional
-            achievements and experiences, so here we go!
+            Si has llegado hasta aquí, supongo que buscas saber algo más sobre
+            mí que un simple listado con mis logros y experiencias profesionales
+            así que, ¡allá vamos!
           </p>
           <p>
-            With more than 7 years of experience working as a web designer and
-            layout designer, I currently work as a Frontend Developer.
+            Con más 7 años de experiencia trabajando como diseñador y maquetador
+            web, actualmente trabajo como Frontend Developer.
           </p>
           <p>
-            I consider myself a curious, active and self-taught person. There is
-            nothing I am more passionate about than devouring information,
-            experimenting and testing what&apos;s new in the industry. When
-            something catches my attention I absorb as much as I can until I
-            really control it 100%. I consider this to be my greatest
-            differential value and what I enjoy most about my work.
+            Me considero una persona curiosa, activa y autodidacta. No hay nada
+            que me apasione más que devorar información, experimentar y testear
+            las novedades del sector. Cuando algo me llama la atención absorbo
+            todo lo que puedo hasta que realmente lo controlo al 100%. Ese
+            considero que es mi mayor valor diferencial y lo que más disfruto de
+            mi trabajo.
           </p>
           <p>
-            Now, my efforts are focused on learning Reactjs, as I see my
-            professional future focused on the development of new technologies
-            related to JavaScript/Typescript. I am also learning everything
-            related to Blockchain as I find it a super interesting world.
+            Ahora, mis esfuerzos están centrados en el aprendizaje de Reactjs,
+            pues veo mi futuro profesional enfocado hacia el desarrollo de
+            nuevas tecnologías relacionadas con JavaScript/Typescript. También
+            estoy aprendiendo todo lo relacionado con la Blockchain ya que me
+            parece un mundo super interesante.
           </p>
 
           <p>
-            My other passion is sports in general, but what fascinates me is
-            Crossfit, for me it is a constant challenge, both mentally and
-            physically that I can extrapolate in my day to day.
+            Mi otra pasión es el deporte en general, pero lo que me fascina es
+            el Crossfit, para mi es un desafió constante, tanto mental como
+            físico que puedo extrapolar en mi día a día.
           </p>
           <p>
-            I will be adding some other project in my Github that I will be
-            doing that may be of interest.
+            Iré añadiendo algun que otro proyecto en mi Acabo un curso por la
+            UOC impartido por{` `}
+            <Link href="https://github.com/elbatlles/">
+              <a target="_blank"> Github</a>
+            </Link>
+            {` `}
+            que vaya haciendo que puede ser de interés.
           </p>
         </div>
       </div>
