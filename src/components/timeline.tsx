@@ -45,7 +45,7 @@ function Timeline() {
           </ul>
         </li>
         <li>
-          <b> 2012:</b> 🏫 Termino DAI y empizo un curso de Android y otro de
+          <b> 2012:</b> 🏫 Termino DAI y empiezo un curso de Android y otro de
           Java
         </li>
         <li>
@@ -112,12 +112,12 @@ function Timeline() {
             interesante
           </li>
           <li>
-            Empizo en la Startup Kumux Aprendo todo mis bases de Reactjs gracias
-            a
+            Empiezo en la Startup Kumux, aprendo todo mis bases de Reactjs
+            gracias a
             <Link href="https://es.linkedin.com/in/pelayomendez">
               <a target="_blank"> Pelayo Mendez </a>
             </Link>
-            y todo que es &#34;vivir&#34; dentro de una startup
+            y todo lo que es &#34;vivir&#34; dentro de una startup
           </li>
           <li>
             Coronavirus (COVID-19) nos tiene en cuarentena. 🏠 #QuedateEnCasa

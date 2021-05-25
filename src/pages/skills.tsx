@@ -46,9 +46,9 @@ export default function Skills() {
             {` `}
             en tiempos cortos para que el cliente puede validar su idea. El área
             principal de mi experiencia es el desarrollo front-end, HTML, CSS,
-            JS, la construcción de aplicaciones web pequeñas y medianas. También
-            tengo experiencia como desarrollador full-stack con populares CMS de
-            código abierto como (WordPress, Prestashop).
+            JS y la construcción de aplicaciones web pequeñas y medianas.
+            También tengo experiencia como desarrollador full-stack con los
+            populares CMS de código abierto como (WordPress, Prestashop).
           </p>
         </div>
         <div className="content-timeline">
