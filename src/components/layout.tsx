@@ -47,6 +47,7 @@ const Layout = ({ children }: Props) => {
   seo.push(about);
   seo.push(skills);
   seo.push(contact);
+
   const seoConfig = seo.find(
     (config) =>
       replaceAll(config.url, `/`, ``) ===
@@ -83,7 +84,13 @@ const Layout = ({ children }: Props) => {
         <header className="  " />
 
         <Navbar />
-        <div className="relative mx-auto sm:pl-6    lg:pl-40 z-20  contain">
+        <div
+          className={
+            useRouter().pathname !== `/404`
+              ? `relative mx-auto sm:pl-6    lg:pl-40 z-20  contain`
+              : `relative mx-auto sm:pl-6    z-20  contain`
+          }
+        >
           <span className="tags tagInitial">
             {tags[0]} <br />
           </span>
