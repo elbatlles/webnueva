@@ -60,8 +60,7 @@ export default function Whoiam() {
             físico que puedo extrapolar en mi día a día.
           </p>
           <p>
-            Iré añadiendo algun que otro proyecto en mi Acabo un curso por la
-            UOC impartido por{` `}
+            Iré añadiendo algun que otro proyecto en mi
             <Link href="https://github.com/elbatlles/">
               <a target="_blank"> Github</a>
             </Link>
