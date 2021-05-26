@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://angelbatlles.me
+
+# Sitemaps
+Sitemap: https://angelbatlles.me/sitemap.xml
