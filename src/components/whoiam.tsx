@@ -65,7 +65,7 @@ export default function Whoiam() {
               <a target="_blank"> Github</a>
             </Link>
             {` `}
-            que vaya haciendo que puede ser de interés.
+            que puede ser de interés.
           </p>
         </div>
       </div>
