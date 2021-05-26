@@ -88,7 +88,7 @@ const Layout = ({ children }: Props) => {
           className={
             useRouter().pathname !== `/404`
               ? `relative mx-auto sm:pl-6    lg:pl-40 z-20  contain`
-              : `relative mx-auto sm:pl-6    z-20  contain`
+              : `relative mx-auto sm:pl-6  bg-color404  z-20  contain`
           }
         >
           <span className="tags tagInitial">

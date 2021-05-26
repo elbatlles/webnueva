@@ -25,6 +25,7 @@ module.exports = {
         bgMenu: '#181818',
         iconsbg: colors.yellow[500],
         tagsHtml: '#515152',
+        color404: '#000084',
       },
       fontFamily: {
         belle: ['"La Belle Aurore"', 'cursive'],
