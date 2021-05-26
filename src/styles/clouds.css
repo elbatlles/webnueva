@@ -24,8 +24,13 @@ body {
   -webkit-border-radius: 200px;
   z-index: 5;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.cloud > div {
+  z-index: 99;
+}
 .cloud:before,
 .cloud:after {
   content: '';
