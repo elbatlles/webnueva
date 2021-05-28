@@ -15,19 +15,19 @@ const Layout = ({ children }: Props) => {
   const canonicalURL = site + useRouter().pathname;
   const index = {
     url: `/`,
-    description: ` Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme`,
+    description: `Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme`,
     meta: `  Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme `,
     title: `[Angel Batlles] 🥷🏻 | Web developer`,
   };
   const about = {
     url: `/about`,
-    description: ` Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme`,
+    description: `Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme`,
     meta: `  Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme `,
     title: `[Angel Batlles] 🥷🏻 | Sobre mi`,
   };
   const skills = {
     url: `/skills`,
-    description: ` Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme`,
+    description: `Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme`,
     meta: ` Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme `,
     title: `[Angel Batlles] 🥷🏻 | Mis habilidades `,
   };
@@ -73,6 +73,22 @@ const Layout = ({ children }: Props) => {
           <meta property="og:description" content={seoConfig?.description} />
         )}
         <link rel="canonical" href={canonicalURL} />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
         <style>
           @import
           url(&apos;https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap&apos;);
