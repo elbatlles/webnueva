@@ -14,7 +14,7 @@ function Timeline() {
         </li>
         <li>
           <b> 1997:</b> 🎮 Me regalan mi primera Gameboy y con ello cada vez me
-          aficiono mas a la tecnología
+          aficiono más a la tecnología
         </li>
         <li>
           <b> 2003:</b> ⌨️ Tengo mi primer ordenador: Un Pentium 4 con 256MB de
@@ -46,16 +46,16 @@ function Timeline() {
         </li>
         <li>
           <b> 2012:</b> 🏫 Termino DAI y empiezo un curso de Android y otro de
-          Java
+          Java.
         </li>
         <li>
-          <b> 2013:</b> 🏫 Dejo{` `}
+          <b> 2013:</b> 🏫 Finalizo en{` `}
           <Link href="https://puntinformatic.com/">
             <a target="_blank"> Punt Informatic </a>
           </Link>
-          {` `}y Empiezo en{` `}
+          {` `}y empiezo en{` `}
           <Link href="https://grafix.es/">
-            <a target="_blank"> Grafix </a>
+            <a target="_blank"> Grafix. </a>
           </Link>
         </li>
         <li>
@@ -66,14 +66,14 @@ function Timeline() {
           </Link>
           y
           <Link href="https://www.linkedin.com/in/marcgirbau/">
-            <a target="_blank"> Marc Girbau</a>
+            <a target="_blank"> Marc Girbau</a>.
           </Link>
         </li>
         <li>
-          <b> 2015:</b>🐶 LLega a casa la menta, una perrita
+          <b> 2015:</b>🐶 LLega a casa la menta, una perrita.
         </li>
         <li>
-          <b> 2016:</b>🏃 Hago mi primera carrera de 15k
+          <b> 2016:</b>🏃 Hago mi primera carrera de 15k.
         </li>
         <li>
           <b> 2017:</b>🏋️ Empiezo con el Crossfit y a invertir en cryptomonedas
@@ -82,10 +82,10 @@ function Timeline() {
         <li>
           <b> 2018:</b>
           <ul>
-            <li>Hago una media maraton de montaña y una normal.</li>
+            <li>Hago una media maratón de montaña y una 10k.</li>
             <li>
               ✈️ Viajo a Albania 🇦🇱 donde me cambia la perspectiva de como va el
-              mundo
+              mundo.
             </li>
           </ul>
         </li>
@@ -93,7 +93,7 @@ function Timeline() {
           <b> 2019:</b>
           {` `}
           <ul>
-            <li>Primera competicion y lesion en crosfit</li>
+            <li>Primera competición y lesión en crosfit.</li>
             <li>
               Creación de la marca Gametravel en la incubadora de la univeristat
               de Mataro.
@@ -109,7 +109,7 @@ function Timeline() {
             </Link>
             {` `}
             sobre IOT, que me abre un mundo nuevo y conzco a gente super
-            interesante
+            interesante.
           </li>
           <li>
             Empiezo en la Startup Kumux, aprendo todo mis bases de Reactjs
@@ -117,10 +117,10 @@ function Timeline() {
             <Link href="https://es.linkedin.com/in/pelayomendez">
               <a target="_blank"> Pelayo Mendez </a>
             </Link>
-            y todo lo que es &#34;vivir&#34; dentro de una startup
+            y todo lo que es &#34;vivir&#34; dentro de una startup.
           </li>
           <li>
-            Coronavirus (COVID-19) nos tiene en cuarentena. 🏠 #QuedateEnCasa
+            Coronavirus (COVID-19) nos tiene en cuarentena. 🏠 #QuedateEnCasa.
           </li>
         </li>
       </ul>

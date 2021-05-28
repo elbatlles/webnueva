@@ -31,11 +31,11 @@ export default function About() {
           <p>
             ¡Hola! Mi nombre es Angel Batlles. Nací hace {time} años en
             Barcelona (España). Estudié &#34;desenvolupament d&apos;aplicacions
-            informatiques&#34; en la IES Carles Vallbona y actualmente estoy en
-            el inpas de ser trabajador a freelance. He trabajado para varias
-            empresas locales, además de haber intentado crear alguna startup.
-            Actualmente me sigo formando diariamente sobre JavaScript/Typescript
-            y otras tecnologías como React.
+            informàtiques&#34; en la IES Carles Vallbona y actualmente estoy en
+            el cambio de ser trabajador a freelance. He trabajado para varias
+            empresas locales, además de haber creado alguna startup. Actualmente
+            me sigo formando diariamente sobre JavaScript/Typescript y otras
+            tecnologías como React.
           </p>
         </div>
         <div className="pt-32 content-timeline">
