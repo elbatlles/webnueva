@@ -14,7 +14,7 @@ function Timeline() {
         </li>
         <li>
           <b> 1997:</b> 🎮 Me regalan mi primera Gameboy y con ello cada vez me
-          aficiono más a la tecnología
+          aficiono más a la tecnología.
         </li>
         <li>
           <b> 2003:</b> ⌨️ Tengo mi primer ordenador: Un Pentium 4 con 256MB de
@@ -35,11 +35,11 @@ function Timeline() {
         <li>
           <b> 2011:</b> <br />
           <ul>
-            <li>Trabajo en Zimbra en Italia como Erasmus</li>
+            <li>Trabajo en Zimbra en Italia como Erasmus.</li>
             <li>
               Empiezo a Trabajar en
               <Link href="https://puntinformatic.com/">
-                <a target="_blank"> Punt Informatic </a>.
+                <a target="_blank"> Punt Informatic.</a>
               </Link>
             </li>
           </ul>
@@ -51,11 +51,11 @@ function Timeline() {
         <li>
           <b> 2013:</b> 🏫 Finalizo en{` `}
           <Link href="https://puntinformatic.com/">
-            <a target="_blank"> Punt Informatic </a>
+            <a target="_blank"> Punt Informatic.</a>
           </Link>
           {` `}y empiezo en{` `}
           <Link href="https://grafix.es/">
-            <a target="_blank"> Grafix</a>.
+            <a target="_blank"> Grafix.</a>
           </Link>
         </li>
         <li>
@@ -66,7 +66,7 @@ function Timeline() {
           </Link>
           y
           <Link href="https://www.linkedin.com/in/marcgirbau/">
-            <a target="_blank"> Marc Girbau</a>.
+            <a target="_blank"> Marc Girbau.</a>
           </Link>
         </li>
         <li>
@@ -93,7 +93,7 @@ function Timeline() {
           <b> 2019:</b>
           {` `}
           <ul>
-            <li>Primera competición y lesión en crosfit.</li>
+            <li>Primera competición y lesión en crossfit.</li>
             <li>
               Creación de la marca Gametravel en la incubadora de la univeristat
               de Mataro.
