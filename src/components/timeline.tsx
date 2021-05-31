@@ -30,7 +30,7 @@ function Timeline() {
         </li>
         <li>
           <b> 2008:</b> 🏫 Termino ESI, &#34;Explotació de Sistemes
-          Informàtics&#34;
+          Informàtics&#34;.
         </li>
         <li>
           <b> 2011:</b> <br />
@@ -39,7 +39,7 @@ function Timeline() {
             <li>
               Empiezo a Trabajar en
               <Link href="https://puntinformatic.com/">
-                <a target="_blank"> Punt Informatic </a>
+                <a target="_blank"> Punt Informatic </a>.
               </Link>
             </li>
           </ul>
@@ -55,7 +55,7 @@ function Timeline() {
           </Link>
           {` `}y empiezo en{` `}
           <Link href="https://grafix.es/">
-            <a target="_blank"> Grafix. </a>
+            <a target="_blank"> Grafix</a>.
           </Link>
         </li>
         <li>
