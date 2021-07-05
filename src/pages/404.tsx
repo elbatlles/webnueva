@@ -3,11 +3,6 @@ import useScrollView from '@/hooks/useScrollView';
 import useIsInViewport from 'use-is-in-viewport';
 
 export default function About() {
-  const [isInViewport, targetRef] = useIsInViewport();
-  const scrollView = useScrollView(isInViewport);
-  const born: Date = new Date(`1989-11-29`);
-  const timeDiff = Math.abs(Date.now() - born.getTime());
-  const time = Math.floor(timeDiff / (1000 * 3600 * 24) / 365);
   return (
     <div className="notfoundbody   min-w-full ">
       <main className="flex-col lg:flex-row  flex ">

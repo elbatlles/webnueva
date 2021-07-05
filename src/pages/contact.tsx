@@ -68,11 +68,11 @@ export default function contact() {
   const handleSend = () => {
     if (validateForm() === true) {
       emailjs.send(`angelbatlles.me`, `template_t7z695e`, form).then(
-        (response) => {
+        () => {
           //  console.log('SUCCESS!', response.status, response.text);
           setsend(true);
         },
-        (error) => {
+        () => {
           //   console.log('FAILED...', error);
         },
       );
@@ -105,12 +105,7 @@ export default function contact() {
           </div>
           <div className="contain ">
             <div className="text-zone text-center lg:text-left">
-              <p>
-                Me interesan las oportunidades de trabajo autónomo,
-                especialmente los proyectos ambiciosos o de gran envergadura.
-                Sin embargo, si tienes otra petición o pregunta, no dudes en
-                utilizar el formulario.
-              </p>
+              <p>Estas a un click de empezar una nuea aventura.</p>
             </div>
             {send === false ? (
               <div className="flex flex-col ">

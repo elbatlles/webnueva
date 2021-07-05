@@ -211,7 +211,7 @@ a {
   @apply sm:text-7xl;
   @apply justify-start;
   @apply mr-4;
-  @apply lg:text-8xl;
+  @apply lg:text-7xl;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -334,4 +334,68 @@ a {
   @apply lg:min-w-progressbar;
   @apply w-full;
   @apply lg:w-auto;
+}
+.portfolio {
+  @apply relative;
+  @apply p-3;
+}
+.bar {
+  @apply block;
+  @apply relative;
+  @apply h-6;
+  @apply bg-white;
+  @apply w-full;
+  @apply z-10;
+  @apply text-gray-400;
+}
+
+.bar h3 {
+  @apply text-center;
+  @apply text-xs;
+  @apply uppercase;
+  @apply justify-center;
+  @apply flex;
+  @apply w-full;
+  @apply h-full;
+  @apply items-center;
+  @apply font-bold;
+}
+.bar i,
+.bar i:before,
+.bar i:after {
+  @apply absolute;
+  @apply z-30;
+  top: 0.4rem;
+  @apply left-2;
+  background-color: #ff5f57;
+
+  height: 12px;
+  width: 12px;
+  @apply rounded-md;
+}
+.bar i:before {
+  content: ' ';
+  left: 16px;
+  background-color: #ffbd2e;
+  top: 0;
+}
+.bar i:after {
+  content: ' ';
+  left: 32px;
+  background-color: #28ca41;
+  top: 0;
+}
+.mainPortoflio:before {
+  @apply absolute;
+
+  @apply w-full;
+  @apply h-full;
+  content: '';
+  z-index: 20;
+}
+.mainPortoflio {
+  @apply bg-white;
+  @apply shadow-md;
+  @apply z-0;
+  @apply p-1;
 }
