@@ -3,8 +3,10 @@
 import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
 
 import { setContext } from '@apollo/client/link/context';
+import { getStrapiURL } from './api';
 
-const API_URL = `http://localhost:1337`;
+// const API_URL = `http://localhost:1337`;
+const API_URL = getStrapiURL();
 
 const token = process.env.JWT;
 

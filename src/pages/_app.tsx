@@ -6,35 +6,35 @@ import '@/styles/404.css';
 import Layout from '@/components/layout';
 
 import AppContext from '@/context/appContext';
+import { useEffect } from 'react';
+import { login } from '@/lib/auth';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   // console.log(router.asPath);
   // const [user, setuser] = useState({});
 
   // const [cookies, setCookie, removeCookie] = useCookies(['token']);
-  /* useEffect(() => {
-    const token = Cookie.get('token');
-    
+  useEffect(() => {
+    const token = false;
+
     if (!token) {
-      login('', '');
+      login(`web`, `123456`);
+      // login('graphql', '123456');
     } else {
-      fetch('http://localhost:1337/users/me', {
+      /* fetch('https://backendtienda.herokuapp.com/users/me', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       }).then(async (res) => {
-         
         if (!res.ok) {
           return null;
         }
         const user = await res.json();
-       
-        setuser(user);
-        Cookie.set('token', token);
+
         localStorage.setItem('token', token);
-      });
+      }); */
     }
-  }, []); */
+  }, []);
   let jwt = ``;
   if (process.env.JWT !== undefined) {
     jwt = process.env.JWT;
