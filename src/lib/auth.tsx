@@ -1,10 +1,11 @@
 import Router from 'next/router';
 
 import axios from 'axios';
+import { getStrapiURL, server } from './api';
 
-const API_URL = `https://backendtienda.herokuapp.com`;
+const API_URL = server;
 // const API_URL = 'http://localhost:1337';
-console.log(API_URL);
+
 export const login = (identifier: any, password: any) =>
   // prevent function from being ran on the server
 

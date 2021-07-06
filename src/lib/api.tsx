@@ -1,6 +1,6 @@
 export function getStrapiURL(path = ``) {
   return `${
-    process.env.API_URL || `https://backendtienda.herokuapp.com`
+    process.env.API_URL || `https://backendtienda.herokuapp.com/`
   }${path}`;
 }
 
@@ -12,3 +12,8 @@ export async function fetchAPI(path: string | undefined) {
   const data = await response.json();
   return data;
 }
+const dev = process.env.NODE_ENV !== `production`;
+
+export const server = dev
+  ? `http://localhost:1337`
+  : `https://backendtienda.herokuapp.com`;
