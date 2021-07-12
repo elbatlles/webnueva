@@ -18,8 +18,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     const token = false;
 
     if (!token) {
-      login(`web`, `123456`);
-      // login('graphql', '123456');
+      // login(`web`, `123456`);
+      login(`graphql`, `123456`);
     } else {
       /* fetch('https://backendtienda.herokuapp.com/users/me', {
         headers: {

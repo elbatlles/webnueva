@@ -266,9 +266,9 @@ a {
   @apply opacity-0;
   @apply font-lora;
   @apply text-3xl;
-  @apply lg:text-5xl;
-  @apply sm:text-5xl;
-  @apply xl:text-5xl;
+  @apply lg:text-4xl;
+  @apply sm:text-4xl;
+  @apply xl:text-4xl;
 
   @apply text-colorHover;
   @apply overflow-hidden;

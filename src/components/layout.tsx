@@ -15,27 +15,33 @@ const Layout = ({ children }: Props) => {
   const canonicalURL = site + useRouter().pathname;
   const index = {
     url: `/`,
-    description: `Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme`,
-    meta: `  Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme `,
-    title: `[Angel Batlles] 🥷🏻 | Web developer`,
+    description: `▷ Soy un programador Freelance que desarollo proyectos MVP rapido y escalable`,
+    meta: `▷ Soy un programador Freelance que desarollo proyectos MVP rapido y escalable`,
+    title: `Creo y diseño tus proyectos a medida | Programador MVP`,
   };
   const about = {
     url: `/about`,
-    description: `Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme`,
-    meta: `  Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme `,
+    description: `Persona curiosa por vocación, intentando siempre aprender de mis errores`,
+    meta: `Persona curiosa por vocación, intentando siempre aprender de mis errores`,
     title: `[Angel Batlles] 🥷🏻 | Sobre mi`,
   };
   const skills = {
     url: `/skills`,
-    description: `Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme`,
-    meta: ` Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme `,
+    description: `No era el mas listo de clase pero siempre estaba dandolo todo para aprender`,
+    meta: `No era el mas listo de clase pero siempre estaba dandolo todo para aprender`,
     title: `[Angel Batlles] 🥷🏻 | Mis habilidades `,
   };
   const contact = {
     url: `/contact`,
-    description: `Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme`,
-    meta: `  Bienvenidos a mi web personal, donde encontraras un poco de mi, curiosea lo que veas y preguntarme `,
+    description: `Estoy aqui para ayudarte, y  soy bastante rápido en contestar, normalmente en 48 horas.`,
+    meta: `Estoy aqui para ayudarte, y  soy bastante rápido en contestar, normalmente en 48 horas.`,
     title: `[Angel Batlles] 🥷🏻 | ¿Nececitas algo?`,
+  };
+  const blog = {
+    url: `/blog`,
+    description: `Aquí es donde podrás encontrar los artículos que escribo, sobre MVP's, cryptomonedas y desarollo`,
+    meta: `Aquí es donde podrás encontrar los artículos que escribo, sobre MVP's, cryptomonedas y desarollo`,
+    title: `[Angel Batlles] 🥷🏻 | Blog`,
   };
   const seo: Array<{
     url: string;
@@ -47,6 +53,7 @@ const Layout = ({ children }: Props) => {
   seo.push(about);
   seo.push(skills);
   seo.push(contact);
+  seo.push(blog);
 
   const seoConfig = seo.find(
     (config) =>

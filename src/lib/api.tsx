@@ -11,7 +11,7 @@ export async function fetchAPI(path: string | undefined) {
   return data;
 }
 // const dev = process.env.NODE_ENV !== `production`;
-const dev = false;
+const dev = true;
 export const server = dev
   ? `http://localhost:1337`
   : `https://backendtienda.herokuapp.com`;

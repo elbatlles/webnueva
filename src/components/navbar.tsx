@@ -95,7 +95,18 @@ export default function Navbar() {
                     </a>
                   </Link>
                 </li>
-
+                <li>
+                  <Link passHref href="/blog">
+                    <a
+                      tabIndex={0}
+                      role="button"
+                      onClick={handleClick}
+                      onKeyDown={handleClick}
+                    >
+                      Blog
+                    </a>
+                  </Link>
+                </li>
                 <li>
                   <Link passHref href="/contact">
                     <a

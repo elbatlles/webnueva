@@ -90,7 +90,7 @@ export default function Home({ portfoliosRes }: any) {
             {arrowDown}
           </div>
         </div>
-        <div className="lg:px-32  lg:block">
+        <div className="lg:px-32  hidden 2xl:block">
           <Image
             src="/perfil.jpg"
             alt="Angel Batlles"
