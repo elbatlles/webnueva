@@ -105,7 +105,7 @@ export default function contact() {
           </div>
           <div className="contain ">
             <div className="text-zone text-center lg:text-left">
-              <p>Estas a un click de empezar una nuea aventura.</p>
+              <p>Estas a un click de empezar una nueva aventura.</p>
             </div>
             {send === false ? (
               <div className="flex flex-col ">

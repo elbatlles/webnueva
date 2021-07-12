@@ -90,7 +90,7 @@ export default function Home({ portfoliosRes }: any) {
             {arrowDown}
           </div>
         </div>
-        <div className="px-32 hidden lg:block">
+        <div className="lg:px-32  lg:block">
           <Image
             src="/perfil.jpg"
             alt="Angel Batlles"
@@ -104,7 +104,85 @@ export default function Home({ portfoliosRes }: any) {
           {arrowDown}
         </div>
       </div>
-
+      <div className="section ">
+        <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
+          <h2 className={scrollView ? `subtitle` : `flex`}>
+            <div className="blast">¿</div>
+            <div className="blast">T</div>
+            <div className="blast  mr-5">e</div>
+            <div className="blast  ">s</div>
+            <div className="blast">u</div>
+            <div className="blast  ">e</div>
+            <div className="blast ">n</div>
+            <div className="blast">a</div>
+            <div className="blast mr-5">n</div>
+            <div className="blast ">d</div>
+            <div className="blast mr-5">e</div>
+            <div className="blast ">a</div>
+            <div className="blast ">l</div>
+            <div className="blast ">g</div>
+            <div className="blast mr-5">o</div>
+            <div className="blast ">e</div>
+            <div className="blast ">s</div>
+            <div className="blast ">t</div>
+            <div className="blast ">a</div>
+            <div className="blast mr-5">s</div>
+            <div className="blast ">a</div>
+            <div className="blast ">f</div>
+            <div className="blast ">i</div>
+            <div className="blast ">r</div>
+            <div className="blast ">m</div>
+            <div className="blast ">a</div>
+            <div className="blast ">c</div>
+            <div className="blast ">i</div>
+            <div className="blast ">o</div>
+            <div className="blast ">n</div>
+            <div className="blast ">e</div>
+            <div className="blast ">s</div>
+            <div className="blast ">?</div>
+          </h2>
+        </div>
+        <div className="questions items-center grid  grid-cols-3 space-y-0 lg:grid-cols-3 gap-6">
+          <div>
+            <h4>Tengo una idea que me va a hacerme rico </h4>
+            <p>
+              Las ideas sin acciones no valen nada, busca la manera de arrancar.
+            </p>
+            <h4>No se por donde empezar </h4>
+            <p>
+              No te precupes, acceder a este
+              <Link passHref href="/documents/breefing.odt">
+                <a className="text-colorHover" href="">
+                  {` `}
+                  Breefing{` `}
+                </a>
+              </Link>
+              y que te ayuadara a aclarar las ideas.
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/perfil.jpg"
+              alt="Angel Batlles"
+              width={650}
+              height={488}
+              className=" rounded  animate-fadeindown"
+            />
+          </div>
+          <div>
+            <h4>Me esfuerzo pero no avanzo </h4>
+            <p>
+              Aunque lo des todo, no tenemos todas las herramientas para avanzar
+              y no nos damos cuenta.
+            </p>
+            <h4>No tengo tiempo </h4>
+            <p>
+              Se que tengo que informarme de como crear mi producto pero nose
+              por donde empezar.
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="section ">
         <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
           <h2 className={scrollView ? `subtitle` : ``}>

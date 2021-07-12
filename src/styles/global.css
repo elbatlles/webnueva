@@ -40,6 +40,14 @@
   ul {
     @apply text-white;
   }
+  h4 {
+    @apply text-2xl;
+    @apply leading-6;
+    @apply text-colorHover;
+  }
+}
+.questions p {
+  padding: 8px 0px 0.75rem !important;
 }
 
 .menu li {
