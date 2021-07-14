@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 interface Props {
@@ -13,10 +14,15 @@ const Article = (props: Props) => {
     <div>
       {articles.map((article: Article) => (
         <div>
-          <h4 className="subtitle">{article.title}</h4>
+          <Link passHref href={`blog/${article.slug}`}>
+            <a tabIndex={0} role="button">
+              <h4 className="subtitle">{article.title}</h4>
+            </a>
+          </Link>
+
           <div className="flex  gap-3">
             <div className="w-3/4">
-              <p>{article.content}</p>
+              <p>{article.description}</p>
             </div>
             <div className="w-3/12">
               <Image
