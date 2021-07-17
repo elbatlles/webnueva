@@ -24,7 +24,7 @@ const Article = (props: Props) => {
               <p>{article.description}</p>
             </div>
             <div className="w-3/12">
-              {article.image && (
+              {article.image && article.image.url && (
                 <Image
                   src={article.image.url}
                   alt="Angel Batlles"
