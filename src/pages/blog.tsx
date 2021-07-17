@@ -4,6 +4,7 @@ import client from '@/lib/apollo';
 import { gql } from '@apollo/client';
 import React from 'react';
 import useIsInViewport from 'use-is-in-viewport';
+import ReactPaginate from 'react-paginate';
 
 interface Props {
   articles: Article[];
@@ -12,13 +13,20 @@ interface Props {
 const blog = (props: Props) => {
   const { articles } = props;
 
-  console.log(articles);
   const [isInViewport, targetRef] = useIsInViewport();
   const scrollView = useScrollView(isInViewport);
+  /* const handlePageClick = (data:any) => {
+    let selected = data.selected;
+    let offset = Math.ceil(selected * this.props.perPage);
+
+    this.setState({ offset: offset }, () => {
+      this.loadCommentsFromServer();
+    });
+  }; */
 
   return (
     <div className="  min-h-screen min-w-full  flex home">
-      <main className="flex-col lg:flex-row  flex min-w-full">
+      <main className="flex-col  flex min-w-full">
         <div className="pt-32  pr-8">
           <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
             <h1 className={scrollView ? `subtitle` : ``}>
@@ -53,6 +61,7 @@ export async function getStaticProps() {
     `,
   });
   const { articles } = articlesRes;
+
   return {
     props: {
       articles,

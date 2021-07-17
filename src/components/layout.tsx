@@ -15,9 +15,9 @@ const Layout = ({ children }: Props) => {
   const canonicalURL = site + useRouter().pathname;
   const index = {
     url: `/`,
-    description: `▷ Soy un programador Freelance que desarollo proyectos MVP rapido y escalable`,
-    meta: `▷ Soy un programador Freelance que desarollo proyectos MVP rapido y escalable`,
-    title: `Creo y diseño tus proyectos a medida | Programador MVP`,
+    description: ` Soy un programador Freelance que desarollo proyectos MVP rapido y escalable`,
+    meta: ` Soy un programador Freelance que desarollo proyectos MVP rapido y escalable`,
+    title: `▷ Creo y diseño tus proyectos a medida | 🥷🏻 Programador MVP`,
   };
   const about = {
     url: `/about`,

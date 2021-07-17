@@ -3,5 +3,8 @@ type Article = {
     title: string
     content: string
     slug: string
-    image: Array
+    image: {
+      url:string
+      name:string
+    }
   }

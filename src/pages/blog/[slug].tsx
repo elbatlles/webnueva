@@ -1,32 +1,90 @@
 import client from '@/lib/apollo';
 import { gql } from '@apollo/client';
+import { GetStaticProps } from 'next';
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 interface Props {
-  article: Article;
+  articles: any;
 }
 
 const New = (props: Props) => {
-  const { article } = props;
-  return <div>aa</div>;
+  const { articles } = props;
+  // console.log(articles);
+  return (
+    <main className="flex-col lg:flex-row  flex min-w-full">
+      <div className="pt-32 content pr-8">
+        <h4 className="subtitle">{articles[0].title}</h4>
+        <ReactMarkdown>{articles[0].content}</ReactMarkdown>;
+      </div>
+      <div className="pt-32 content-timeline">
+        <div className="content-timeline" />
+      </div>
+    </main>
+  );
 };
-export async function GetStaticPaths() {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const slug = params?.slug as string;
+
   const { data: articlesRes } = await client.query({
     query: gql`
-      query Products {
+      query Articles($slug: String) {
+        articles(where: { slug: $slug }) {
+          content
+          title
+        }
+      }
+    `,
+    variables: {
+      slug,
+    },
+  });
+  /**  query Articles {
         articles(where: { slug: "noticia-important" }) {
-          id
+          content
+          title
+        }
+      } */
+
+  return {
+    props: articlesRes,
+  };
+};
+export const getStaticPaths = async () => {
+  const { data: articleList } = await client.query({
+    query: gql`
+      query Products {
+        articles {
+          slug
         }
       }
     `,
   });
-  const { articles } = articlesRes;
+  const { articles } = articleList;
+  /* console.log('*----');
   console.log(articles);
-  return {
-    props: {
-      articles,
-    },
-  };
-}
+  console.log('*--fi--');
+  console.log('*----');
+  console.log(articleList);
+  console.log('*--fi--'); */
+  const paths: any[] = articles.map((article: { slug: string }) => ({
+    params: { slug: article.slug.toString() },
+  }));
+  /* console.log('*-paths--');
+  console.log(paths);
+  console.log('*--pathsfi--'); */
+  /*
+ const paths = articleList.map(({ id }) => ({
+  params: {
+    id,
+  },
+})) */
 
+  return {
+    paths,
+    // Incremental static generation
+    // 404 for everything else
+    fallback: false,
+  };
+};
 export default New;

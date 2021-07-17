@@ -11,9 +11,8 @@ const API_URL = server;
 const token = process.env.JWT;
 
 if (typeof window !== `undefined`) {
-  console.log(window.localStorage.getItem(`token`));
-
-  console.log(token);
+  // console.log(window.localStorage.getItem(`token`));
+  //  console.log(token);
 }
 
 const httpLink = createHttpLink({

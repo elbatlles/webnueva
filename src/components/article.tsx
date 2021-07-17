@@ -8,10 +8,9 @@ interface Props {
 
 const Article = (props: Props) => {
   const { articles } = props;
-  console.log(articles);
-  console.log(`si=`);
+
   return (
-    <div>
+    <div className="lg:w-3/5">
       {articles.map((article: Article) => (
         <div>
           <Link passHref href={`blog/${article.slug}`}>
@@ -25,13 +24,15 @@ const Article = (props: Props) => {
               <p>{article.description}</p>
             </div>
             <div className="w-3/12">
-              <Image
-                src="/perfil.jpg"
-                alt="Angel Batlles"
-                width={650}
-                height={488}
-                className=" rounded  animate-fadeindown"
-              />
+              {article.image && (
+                <Image
+                  src={article.image.url}
+                  alt="Angel Batlles"
+                  width={650}
+                  height={488}
+                  className=" rounded  animate-fadeindown"
+                />
+              )}
             </div>
           </div>
         </div>

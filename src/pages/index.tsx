@@ -92,7 +92,7 @@ export default function Home({ portfoliosRes }: any) {
         </div>
         <div className="lg:px-32  hidden 2xl:block">
           <Image
-            src="/perfil.jpg"
+            src="/perfil.png"
             alt="Angel Batlles"
             width={650}
             height={488}
@@ -160,12 +160,13 @@ export default function Home({ portfoliosRes }: any) {
               y que te ayuadara a aclarar las ideas.
             </p>
           </div>
-          <div>
+          <div className=" text-center ">
             <Image
-              src="/perfil.jpg"
+              src="/fotoCentral.png"
               alt="Angel Batlles"
-              width={650}
-              height={488}
+              width={350}
+              height={461}
+              objectFit="contain"
               className=" rounded  animate-fadeindown"
             />
           </div>
