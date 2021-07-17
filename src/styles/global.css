@@ -45,6 +45,22 @@
     @apply leading-6;
     @apply text-colorHover;
   }
+  h3 {
+    @apply text-3xl;
+    @apply leading-6;
+    @apply text-colorHover;
+  }
+  h2 {
+    @apply text-4xl;
+    @apply leading-6;
+    @apply text-colorHover;
+  }
+}
+.article h3 {
+  @apply my-5;
+}
+.article ul {
+  @apply list-disc;
 }
 .questions p {
   padding: 8px 0px 0.75rem !important;

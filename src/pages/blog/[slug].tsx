@@ -12,9 +12,9 @@ const New = (props: Props) => {
   const { articles } = props;
   // console.log(articles);
   return (
-    <main className="flex-col lg:flex-row  flex min-w-full">
-      <div className="pt-32 content pr-8">
-        <h4 className="subtitle">{articles[0].title}</h4>
+    <main className="flex-col lg:flex-row  article flex min-w-full">
+      <div className="pt-32  pr-8">
+        <h2 className="">{articles[0].title}</h2>
         <ReactMarkdown>{articles[0].content}</ReactMarkdown>;
       </div>
       <div className="pt-32 content-timeline">

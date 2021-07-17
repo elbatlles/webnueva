@@ -10,12 +10,12 @@ const Article = (props: Props) => {
   const { articles } = props;
 
   return (
-    <div className="lg:w-3/5">
+    <div className="lg:w-3/5 mt-3">
       {articles.map((article: Article) => (
         <div>
           <Link passHref href={`blog/${article.slug}`}>
             <a tabIndex={0} role="button">
-              <h4 className="subtitle">{article.title}</h4>
+              <h3 className="">{article.title}</h3>
             </a>
           </Link>
 

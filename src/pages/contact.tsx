@@ -95,10 +95,10 @@ export default function contact() {
               <div className="blast">o</div>
               <div className="blast ">n</div>
               <div className="blast ">t</div>
-              <div className="blast">a</div>
+              <div className="blast">á</div>
               <div className="blast ">c</div>
               <div className="blast ">t</div>
-              <div className="blast mr-5">a</div>
+              <div className="blast ">a</div>
               <div className="blast   ">m</div>
               <div className="blast">e</div>
             </h2>
