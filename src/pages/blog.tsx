@@ -60,7 +60,7 @@ export async function getStaticProps() {
       }
     `,
   });
-  console.log(articlesRes);
+
   const { articles } = articlesRes;
 
   return {

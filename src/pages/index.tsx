@@ -106,43 +106,11 @@ export default function Home({ portfoliosRes }: any) {
       </div>
       <div className="section ">
         <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
-          <h2 className={scrollView ? `subtitle` : `flex`}>
-            <div className="blast">¿</div>
-            <div className="blast">T</div>
-            <div className="blast  mr-5">e</div>
-            <div className="blast  ">s</div>
-            <div className="blast">u</div>
-            <div className="blast  ">e</div>
-            <div className="blast ">n</div>
-            <div className="blast">a</div>
-            <div className="blast mr-5">n</div>
-            <div className="blast ">d</div>
-            <div className="blast mr-5">e</div>
-            <div className="blast ">a</div>
-            <div className="blast ">l</div>
-            <div className="blast ">g</div>
-            <div className="blast mr-5">o</div>
-            <div className="blast ">e</div>
-            <div className="blast ">s</div>
-            <div className="blast ">t</div>
-            <div className="blast ">a</div>
-            <div className="blast mr-5">s</div>
-            <div className="blast ">a</div>
-            <div className="blast ">f</div>
-            <div className="blast ">i</div>
-            <div className="blast ">r</div>
-            <div className="blast ">m</div>
-            <div className="blast ">a</div>
-            <div className="blast ">c</div>
-            <div className="blast ">i</div>
-            <div className="blast ">o</div>
-            <div className="blast ">n</div>
-            <div className="blast ">e</div>
-            <div className="blast ">s</div>
-            <div className="blast ">?</div>
-          </h2>
+          <h3 className={scrollView ? `` : `flex`}>
+            ¿ Te suenan de algo estas afirmaciones ?
+          </h3>
         </div>
-        <div className="questions items-center grid  grid-cols-3 space-y-0 lg:grid-cols-3 gap-6">
+        <div className="questions items-center grid  grid-cols-1 space-y-0 lg:grid-cols-3 gap-6">
           <div>
             <h4>Tengo una idea que me va a hacerme rico </h4>
             <p>
@@ -186,17 +154,7 @@ export default function Home({ portfoliosRes }: any) {
       </div>
       <div className="section ">
         <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
-          <h2 className={scrollView ? `subtitle` : ``}>
-            <div className="blast">P</div>
-            <div className="blast">o</div>
-            <div className="blast  ">r</div>
-            <div className="blast ">t</div>
-            <div className="blast">f</div>
-            <div className="blast  ">o</div>
-            <div className="blast ">l</div>
-            <div className="blast">i</div>
-            <div className="blast">o</div>
-          </h2>
+          <h3 className={scrollView ? `` : `flex`}>Portfolio</h3>
         </div>
         <div className="grid  grid-cols-2 space-y-0 lg:grid-cols-5 gap-6">
           {portfolios.length !== 0 &&
@@ -205,7 +163,7 @@ export default function Home({ portfoliosRes }: any) {
                 <Link passHref href={portfolio.url}>
                   <a target="_blank" tabIndex={0} role="button">
                     <div className="bar">
-                      <h3>{portfolio.title}</h3>
+                      <h5>{portfolio.title}</h5>
                       <i />
                     </div>
                     <div className="mainPortoflio">

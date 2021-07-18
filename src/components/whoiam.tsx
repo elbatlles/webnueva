@@ -12,20 +12,7 @@ export default function Whoiam() {
     <div className="section grid  grid-cols-1 space-y-0 lg:grid-cols-2 gap-6">
       <div>
         <div ref={targetRef} className={scrollView ? `visible` : `invisible`}>
-          <h2 className={scrollView ? `subtitle` : ``}>
-            <div className="blast">¿</div>
-            <div className="blast">E</div>
-            <div className="blast mr-5">n</div>
-            <div className="blast ">q</div>
-            <div className="blast">u</div>
-            <div className="blast mr-5">e</div>
-            <div className="blast ">e</div>
-            <div className="blast">s</div>
-            <div className="blast">t</div>
-            <div className="blast">o</div>
-            <div className="blast">y</div>
-            <div className="blast">?</div>
-          </h2>
+          <h3 className={scrollView ? `` : `flex`}>¿En que estoy?</h3>
         </div>
         <div className="text-zone">
           <p>Hola, ¿qué tal estás? ¡Espero que muy bien!</p>

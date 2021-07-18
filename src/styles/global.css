@@ -42,16 +42,20 @@
   }
   h4 {
     @apply text-2xl;
+    @apply font-lora;
     @apply leading-6;
     @apply text-colorHover;
   }
   h3 {
     @apply text-3xl;
+    @apply font-lora;
     @apply leading-6;
+    @apply my-3;
     @apply text-colorHover;
   }
   h2 {
     @apply text-4xl;
+    @apply font-lora;
     @apply leading-6;
     @apply text-colorHover;
   }
@@ -281,9 +285,9 @@ a {
   @apply flex;
   @apply opacity-0;
   @apply font-lora;
-  @apply text-3xl;
+  @apply text-2xl;
   @apply lg:text-4xl;
-  @apply sm:text-4xl;
+  @apply sm:text-5xl;
   @apply xl:text-4xl;
 
   @apply text-colorHover;
@@ -373,7 +377,7 @@ a {
   @apply text-gray-400;
 }
 
-.bar h3 {
+.bar h5 {
   @apply text-center;
   @apply text-xs;
   @apply uppercase;

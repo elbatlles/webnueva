@@ -27,7 +27,7 @@ const Article = (props: Props) => {
               {article.image && article.image.url && (
                 <Image
                   src={article.image.url}
-                  alt="Angel Batlles"
+                  alt={article.image.url}
                   width={650}
                   height={488}
                   className=" rounded  animate-fadeindown"
