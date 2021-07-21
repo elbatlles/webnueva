@@ -32,6 +32,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         articles(where: { slug: $slug }) {
           content
           title
+          description
+          image {
+            url
+          }
         }
       }
     `,
